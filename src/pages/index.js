@@ -1,29 +1,43 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-
-import Layout from "../components/layout"
+import Layout from "../components/layout/layout"
 import Seo from "../components/seo"
+import { useStaticQuery, graphql } from "gatsby";
+import {
+  container,
+  img_container,
+  text,
+  logo_container,
+} from "../styles/home.module.scss"
+import logo from "../images/bacana-logo.png"
 
-const IndexPage = () => (
-  <Layout>
-    <Seo title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["auto", "webp", "avif"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </p>
-  </Layout>
-)
-
-export default IndexPage
+const Home = () => {
+  const data = useStaticQuery(graphql`
+  query SiteTitleQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`);
+  console.log(data.site.siteMetadata, 'data')
+  return (
+    <Layout>
+      <Seo title="Home" />
+      <div className={container}>
+        <section className={img_container}></section>
+        <section className={text}>
+          <h1>
+            At Bacana we offer interior design, but we also offer experiences
+            that draw from the union of everything that inspires us. <br />
+            We are a Worldwide studio specialized in Hospitality and Operations.
+          </h1>
+        </section>
+        <section className={logo_container}>
+          <img src={logo} alt="Bacana logo" />
+        </section>
+      </div>
+    </Layout>
+  )
+}
+export default Home

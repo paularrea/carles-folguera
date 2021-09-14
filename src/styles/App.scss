@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }
+html, body{
+  background-color: #FEFAF4;
+  margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+text-decoration: none;
+color: white;
+    &:visited{
+      text-decoration: none;
+      color: white;
+    }
+    &:hover{
+      text-decoration: none;
+      color: white;
+    }
+    &:focus{
+      text-decoration: none;
+      color: white;
+    }
+    &:active{
+      text-decoration: none;
+      color: white;
+    }
+}
+
+button{
+    -webkit-appearance: none !important;
+}
+
+input[type=text], input[type=button], input[type=submit], select, button {
+    -webkit-appearance: none;
+}
