@@ -36,7 +36,7 @@ const CarouselContainer = () => {
   } = useStaticQuery(allImagesQuery)
 
   return (
-    <Carousel>
+    <Carousel controls={false}>
       {images.map(image => (
         <Carousel.Item
           className={carousel_img}

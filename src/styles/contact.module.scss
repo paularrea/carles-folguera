@@ -1,0 +1,31 @@
+.container{
+position: relative;
+height: calc(100vh - 10vh);
+width: 100%;
+padding: 5rem;
+    .box{
+        font-size: 25px;
+        display: flex;
+        padding-bottom: 1rem;
+        p{
+            padding-right: 3rem;
+            min-width: 300px;
+            max-width: 700px;
+        }
+        a{
+            color: black;
+            &:hover{
+            text-decoration: underline;
+            }
+        }
+    }
+    .flex_box{
+        display: flex;
+        flex-direction: column;
+    }
+    .abs_img{
+        position: absolute;
+        bottom: 5rem;
+        right: 5rem;
+    }
+}
