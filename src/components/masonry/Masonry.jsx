@@ -2,6 +2,7 @@ import React from "react"
 import Img from "gatsby-image"
 import "./masonry.css"
 import Masonry from "react-masonry-css"
+import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
 
 const breakpointColumnsObj = {
   default: 4,
@@ -17,12 +18,18 @@ const MasonryGrid = ({ images }) => {
       className="my-masonry-grid"
       columnClassName="my-masonry-grid_column"
     >
-      {images.map(image => (
-        <Img
-          fluid={image.node.childImageSharp.fluid}
-          alt={image.node.base}
-        />
-      ))}
+      <SimpleReactLightbox>
+        <SRLWrapper>
+          {images.map(image => (
+            <a href={image.node.publicURL}>
+              <Img
+                fluid={image.node.childImageSharp.fluid}
+                alt={image.node.base}
+              />
+            </a>
+          ))}
+        </SRLWrapper>
+      </SimpleReactLightbox>
     </Masonry>
   )
 }

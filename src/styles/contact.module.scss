@@ -2,16 +2,12 @@
 position: relative;
 height: calc(100vh - 10vh);
 width: 100%;
-padding: 5rem;
+padding: 2rem 5vw;
     .box{
-        font-size: 25px;
+        font-size: 20px;
         display: flex;
+        flex-direction: column;
         padding-bottom: 1rem;
-        p{
-            padding-right: 3rem;
-            min-width: 300px;
-            max-width: 700px;
-        }
         a{
             color: black;
             &:hover{
@@ -24,8 +20,40 @@ padding: 5rem;
         flex-direction: column;
     }
     .abs_img{
-        position: absolute;
-        bottom: 5rem;
-        right: 5rem;
+        position: fixed;
+        bottom: 1.5rem;
+        right: 1.5rem;
     }
 }
+
+
+@media (min-width: 900px) {
+    .container{
+        position: relative;
+        height: calc(100vh - 10vh);
+        width: 100%;
+        padding: 5rem 5vw;
+            .box{
+                font-size: 25px;
+                display: flex;
+                padding-bottom: 1rem;
+                p{
+                    padding-right: 3rem;
+                    min-width: 300px;
+                    max-width: 700px;
+                }
+                a{
+                    color: black;
+                    &:hover{
+                    text-decoration: underline;
+                    }
+                }
+            }
+            .abs_img{
+                position: absolute;
+                bottom: 5rem;
+                right: 5rem;
+            }
+        }
+        
+  }

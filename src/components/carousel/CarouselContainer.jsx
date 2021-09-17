@@ -36,11 +36,11 @@ const CarouselContainer = () => {
   } = useStaticQuery(allImagesQuery)
 
   return (
-    <Carousel controls={false}>
+    <Carousel touch wrap controls={false}>
       {images.map(image => (
         <Carousel.Item
           className={carousel_img}
-          interval={6000}
+          interval={3000}
           key={image.node.id}
         >
           <Link to={image.node.base.split(".")[0]}>
@@ -50,12 +50,12 @@ const CarouselContainer = () => {
               fluid={image.node.childImageSharp.fluid}
               alt={image.node.base}
             />
-            <Carousel.Caption>
+            {/* <Carousel.Caption>
               <h5>{image.node.base.split(".")[0]}</h5>
               <p>
                 Praesent commodo cursus magna, vel scelerisque nisl consectetur.
               </p>
-            </Carousel.Caption>
+            </Carousel.Caption> */}
           </Link>
         </Carousel.Item>
       ))}

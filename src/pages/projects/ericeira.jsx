@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../../components/layout/layout"
 import MasonryGrid from "../../components/masonry/masonry"
+import MasonryLayout from "../../components/masonry/MasonryLayout"
 
 const EriceiraProject = () => {
   const allImagesQuery = graphql`
@@ -15,6 +16,7 @@ const EriceiraProject = () => {
         edges {
           node {
             base
+            publicURL
             childImageSharp {
               fluid {
                 base64
@@ -35,7 +37,8 @@ const EriceiraProject = () => {
 
   return (
     <Layout>
-      <MasonryGrid images={images} />
+      {/* <MasonryGrid images={images} /> */}
+      <MasonryLayout images={images} />
     </Layout>
   )
 }

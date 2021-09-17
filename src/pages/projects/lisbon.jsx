@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../../components/layout/layout"
 import MasonryGrid from "../../components/masonry/masonry"
+import MasonryLayout from "../../components/masonry/MasonryLayout"
 
 const LisbonProject = () => {
   const allImagesQuery = graphql`
@@ -15,6 +16,7 @@ const LisbonProject = () => {
         edges {
           node {
             base
+            publicURL
             childImageSharp {
               fluid {
                 base64
@@ -33,10 +35,10 @@ const LisbonProject = () => {
     allFile: { edges: images },
   } = useStaticQuery(allImagesQuery)
 
-  console.log(images, "lisbon")
   return (
     <Layout>
-      <MasonryGrid images={images} />
+      {/* <MasonryGrid images={images} /> */}
+      <MasonryLayout images={images} />
     </Layout>
   )
 }
