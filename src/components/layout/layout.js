@@ -5,6 +5,7 @@ import { page } from "./layout.module.scss"
 import AnimatedCursor from "../cursor/AnimatedCursor"
 import MediaQuery from "react-responsive"
 import "../../styles/App.scss"
+import "../cursor/cursor.css"
 import "bootstrap/dist/css/bootstrap.min.css"
 
 const Layout = ({ children }) => {

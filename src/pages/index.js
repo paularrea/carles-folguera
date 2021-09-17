@@ -36,7 +36,7 @@ const Home = () => {
             and Operations.
           </h1>
         </section>
-        <Link className={abs_img} to="/">
+        <Link className={abs_img} to="/contact">
           <LogoBlack />
         </Link>
       </div>

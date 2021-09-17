@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from "react"
-import "./cursor.css"
+import React, { useState, useEffect, useCallback } from "react"
 import classNames from "classnames"
+import "./cursor.css"
 
 const AnimatedCursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 })
   const [clicked, setClicked] = useState(false)
-  const [linkHovered, setLinkHovered] = React.useState(false)
+  const [linkHovered, setLinkHovered] = useState(false)
   const [hidden, setHidden] = useState(false)
 
-  const addEventListeners = React.useCallback(() => {
+  const addEventListeners = useCallback(() => {
     document.addEventListener("mousemove", onMouseMove)
     document.addEventListener("mouseenter", onMouseEnter)
     document.addEventListener("mouseleave", onMouseLeave)
@@ -16,7 +16,7 @@ const AnimatedCursor = () => {
     document.addEventListener("mouseup", onMouseUp)
   }, [])
 
-  const removeEventListeners = React.useCallback(() => {
+  const removeEventListeners = useCallback(() => {
     document.removeEventListener("mousemove", onMouseMove)
     document.removeEventListener("mouseenter", onMouseEnter)
     document.removeEventListener("mouseleave", onMouseLeave)

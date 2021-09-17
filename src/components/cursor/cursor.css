@@ -6,7 +6,7 @@
     position: fixed;
     transform: translate(-50%, -50%);
     pointer-events: none;
-    transition: all 150ms ease;
+    transition: all 300ms ease;
     transition-property: background-color, opacity, transform, mix-blend-mode;
     z-index: 999999999;
     mix-blend-mode: difference;
