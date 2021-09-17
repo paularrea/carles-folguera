@@ -23,8 +23,6 @@ const MasonryLayout = ({ images }) => {
     // width: 'auto'
   }))
 
-  console.log(photos, "phoooo")
-
   return (
     <div>
       <Gallery photos={photos} onClick={openLightbox} />
