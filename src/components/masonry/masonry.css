@@ -1,9 +1,16 @@
 .react-photo-gallery--gallery img{
-  max-width: 30% !important;
-  width: 500px !important;
+  width: 100% !important;
   height: fit-content !important;
 }
 
 .react-images__footer{
   display: none !important;
+}
+
+@media (min-width: 900px) {
+  .react-photo-gallery--gallery img{
+    max-width: 30% !important;
+    width: 500px !important;
+    height: fit-content !important;
+  }
 }
