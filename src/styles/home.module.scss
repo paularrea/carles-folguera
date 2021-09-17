@@ -7,6 +7,7 @@
         width: 50%;
         height: 700px;
         background-color: salmon;
+        
         bottom: 0;
         left: 0;
         z-index: 1;
@@ -14,18 +15,23 @@
     .text{
         position: absolute;
         right: 5vw;
-        top: 5vw;
+        top: 10vw;
        line-height: 70px;
        width: 70%;
-       font-size: 35px;
-       font-weight: 900;
        z-index: 2;
+       h1{
+        color: black;
+        mix-blend-mode: difference;
+        font-size: 50px;
+        font-weight: 300;
+        z-index: 999;
+       }
     }
 
     .logo_container img {
         position: absolute;
-        bottom: 30vh;
-        right: 10vw;
+        bottom: 5vw;
+        right: 5vw;
         width: 120px;
         height: 120px;
         animation-name: spin;
