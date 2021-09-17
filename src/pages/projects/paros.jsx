@@ -1,7 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../../components/layout/layout"
-import MasonryGrid from "../../components/masonry/masonry"
 import MasonryLayout from "../../components/masonry/MasonryLayout"
 
 const ParosProject = () => {

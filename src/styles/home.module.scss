@@ -4,48 +4,60 @@
     position: relative;
     .img_container{
         position: absolute;
-        width: 50%;
-        height: 700px;
+        width: 300px;
+        height: 300px;
         background-color: salmon;
-        
-        bottom: 0;
-        left: 0;
+        bottom: 20vh;
+        left: 5vw;
         z-index: 1;
     }
     .text{
         position: absolute;
-        right: 5vw;
+        right:5vw;
         top: 10vw;
        line-height: 70px;
-       width: 70%;
+       width: 85%;
        z-index: 2;
        h1{
         color: black;
         mix-blend-mode: difference;
-        font-size: 50px;
+        font-size: 30px;
         font-weight: 300;
         z-index: 999;
        }
     }
-
-    .logo_container img {
-        position: absolute;
-        bottom: 5vw;
-        right: 5vw;
-        width: 120px;
-        height: 120px;
-        animation-name: spin;
-        animation-duration: 5000ms;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear; 
-      }
-      
-      @keyframes spin {
-          from {
-              transform:rotate(360deg);
-          }
-          to {
-              transform:rotate(0deg);
-          }
-      }
+    .abs_img{
+        position: fixed;
+        bottom: 1.5rem;
+        right: 1.5rem;
+    }
 }
+
+@media (min-width: 900px) {
+    .container{
+        .img_container{
+            position: absolute;
+            width: 50vw;
+            height: 50vw;
+            max-width: 700px;
+            max-height: 700px;
+            background-color: salmon;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .text{
+            position: absolute;
+           line-height: 70px;
+           width: 70%;
+           z-index: 2;
+           h1{
+            color: black;
+            mix-blend-mode: difference;
+            font-size: 50px;
+            font-weight: 300;
+            z-index: 999;
+           }
+        }
+    }
+  }

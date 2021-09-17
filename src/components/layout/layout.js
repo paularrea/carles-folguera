@@ -1,10 +1,10 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Header from "../header/Header"
-import "bootstrap/dist/css/bootstrap.min.css"
-import "../../styles/App.scss"
 import { page } from "./layout.module.scss"
 import AnimatedCursor from "../cursor/AnimatedCursor"
+import "../../styles/App.scss"
+import "bootstrap/dist/css/bootstrap.min.css"
 
 const Layout = ({ children }) => {
   if (typeof window !== "undefined") {

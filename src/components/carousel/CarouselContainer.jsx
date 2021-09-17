@@ -1,8 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
-import { carousel_img } from "./carousel.module.scss"
 import { Carousel } from "react-bootstrap"
+import { carousel_img } from "./carousel.module.scss"
 import "./carousel.css"
 
 const CarouselContainer = () => {

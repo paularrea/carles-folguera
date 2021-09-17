@@ -2,13 +2,13 @@ import * as React from "react"
 import Layout from "../components/layout/layout"
 import Seo from "../components/seo"
 import { useStaticQuery, graphql } from "gatsby";
+import LogoBlack from "../components/GatsbyImages/LogoBlack"
 import {
   container,
   img_container,
   text,
-  logo_container,
+  abs_img
 } from "../styles/home.module.scss"
-import logo from "../images/bacana-logo.png"
 
 const Home = () => {
   const data = useStaticQuery(graphql`
@@ -33,9 +33,9 @@ const Home = () => {
             We are a Worldwide studio specialized in Hospitality and Operations.
           </h1>
         </section>
-        <section className={logo_container}>
-          <img src={logo} alt="Bacana logo" />
-        </section>
+        <div className={abs_img}>
+        <LogoBlack/>
+      </div>
       </div>
     </Layout>
   )

@@ -39,7 +39,7 @@ const ProjectsGrid = () => {
       <Grid>
         <Row>
           {images.map(image => (
-            <Col md={4} sm={12} xs={12}>
+            <Col style={{display:'flex', jusifyContent:'center', alignItems:'center'}} md={4} sm={12} xs={12}>
               <div className={item}>
                 <Link to={image.node.base.split(".")[0]}>
                   <Img

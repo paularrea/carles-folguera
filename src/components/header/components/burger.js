@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { active } from "../header.module.scss"
 import { slide as Menu } from "react-burger-menu"
 
-export default props => {
+const Burger = props => {
   return (
     <Menu {...props}>
       <nav>
@@ -20,3 +20,5 @@ export default props => {
     </Menu>
   )
 }
+
+export default Burger
