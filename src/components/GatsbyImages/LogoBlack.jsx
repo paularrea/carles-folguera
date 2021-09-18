@@ -8,7 +8,7 @@ const LogoBlack = () => {
       src="../../images/bacana-logo.png"
       style={{
         animationName: "spinRight",
-        animationDuration: "20000ms",
+        animationDuration: "5000ms",
         animationIterationCount: "infinite",
         animationTimingFunction: "linear",
         width: "15vw",
