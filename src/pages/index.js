@@ -2,7 +2,6 @@ import * as React from "react"
 import Layout from "../components/layout/layout"
 import { Link } from "gatsby"
 import Seo from "../components/seo"
-import { useStaticQuery, graphql } from "gatsby"
 import LogoBlack from "../components/GatsbyImages/LogoBlack"
 import {
   container,
@@ -13,16 +12,6 @@ import {
 import HomeVideo from "../components/video/HomeVideo"
 
 const Home = () => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-  console.log(data.site.siteMetadata, "data")
   return (
     <Layout>
       <Seo title="Home" />

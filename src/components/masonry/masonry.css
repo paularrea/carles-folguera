@@ -1,6 +1,6 @@
 .react-photo-gallery--gallery img{
   width: 100% !important;
-  height: fit-content !important;
+  height: max-content !important;
 }
 
 .react-photo-gallery--gallery div{
