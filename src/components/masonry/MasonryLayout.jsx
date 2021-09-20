@@ -9,7 +9,9 @@ const MasonryLayout = ({ images }) => {
 
   const openLightbox = useCallback((event, { photo, index }) => {
     setCurrentImage(index)
-    setViewerIsOpen(true)
+    setTimeout(() => {
+      setViewerIsOpen(true)
+    }, 300)
   }, [])
 
   const closeLightbox = () => {

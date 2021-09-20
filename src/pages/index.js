@@ -10,6 +10,7 @@ import {
   text,
   abs_img,
 } from "../styles/home.module.scss"
+import HomeVideo from "../components/video/HomeVideo"
 
 const Home = () => {
   const data = useStaticQuery(graphql`
@@ -26,7 +27,9 @@ const Home = () => {
     <Layout>
       <Seo title="Home" />
       <div className={container}>
-        <section className={img_container}></section>
+        <section className={img_container}>
+          <HomeVideo />
+        </section>
         <section className={text}>
           <h1>
             At Bacana we offer <Link>interior design</Link>, but we also offer

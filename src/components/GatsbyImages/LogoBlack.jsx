@@ -13,6 +13,8 @@ const LogoBlack = () => {
         animationTimingFunction: "linear",
         width: "15vw",
         height: "15vw",
+        maxWidth:200,
+        maxHeight:200,
         minWidth: "100px",
         minHeight: "100px",
       }}
