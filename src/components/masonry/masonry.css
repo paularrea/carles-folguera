@@ -3,7 +3,12 @@
   height: max-content !important;
 }
 
-.react-photo-gallery--gallery div{
+.react-photo-gallery--gallery > div > img {
+  object-fit: contain;
+  max-height: 450px;
+}
+
+.react-photo-gallery--gallery > div{
   height: fit-content !important;
   justify-content: center;
 }

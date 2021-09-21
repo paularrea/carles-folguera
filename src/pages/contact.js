@@ -57,7 +57,7 @@ const Contact = () => (
           </p>
         </div>
       </section>
-      <Link className={abs_img} to="/">
+      <Link style={{ zIndex: 9999 }} className={abs_img} to="/">
         <LogoBlack />
       </Link>
     </div>

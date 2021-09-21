@@ -28,7 +28,7 @@ const Home = () => {
             and Operations.
           </h1>
         </section>
-        <Link className={abs_img} to="/contact">
+        <Link style={{zIndex:9999}} className={abs_img} to="/contact">
           <LogoBlack />
         </Link>
       </div>
