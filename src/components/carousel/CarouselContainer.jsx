@@ -2,7 +2,8 @@ import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import { Carousel } from "react-bootstrap"
-import { carousel_img } from "./carousel.module.scss"
+import { carousel_img, caption } from "./carousel.module.scss"
+import data from "./projectsData"
 import "./carousel.css"
 
 const CarouselContainer = () => {
@@ -50,12 +51,19 @@ const CarouselContainer = () => {
               fluid={image.node.childImageSharp.fluid}
               alt={image.node.base}
             />
-            {/* <Carousel.Caption>
-              <h5>{image.node.base.split(".")[0]}</h5>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
-            </Carousel.Caption> */}
+
+            {data.map(project => {
+              if (image.node.base.split(".")[0] === project.name) {
+                return (
+                  <Carousel.Caption>
+                    <div className={caption}>
+                      <h1>{project.title}</h1>
+                      <p>{project.sub_title}</p>
+                    </div>
+                  </Carousel.Caption>
+                )
+              }
+            })}
           </Link>
         </Carousel.Item>
       ))}

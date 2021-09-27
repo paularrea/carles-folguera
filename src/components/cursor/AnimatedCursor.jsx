@@ -27,6 +27,7 @@ const AnimatedCursor = () => {
   useEffect(() => {
     addEventListeners()
     handleLinkHoverEvents()
+    imgHandleLinkHoverEvents()
     return () => removeEventListeners()
   }, [addEventListeners, removeEventListeners])
 
@@ -52,6 +53,13 @@ const AnimatedCursor = () => {
 
   const handleLinkHoverEvents = () => {
     document.querySelectorAll("a").forEach(el => {
+      el.addEventListener("mouseover", () => setLinkHovered(true))
+      el.addEventListener("mouseout", () => setLinkHovered(false))
+    })
+  }
+
+  const imgHandleLinkHoverEvents = () => {
+    document.querySelectorAll("div").forEach(el => {
       el.addEventListener("mouseover", () => setLinkHovered(true))
       el.addEventListener("mouseout", () => setLinkHovered(false))
     })
