@@ -11,6 +11,7 @@ const LisbonProject = () => {
           extension: { regex: "/(jpg)|(png)|(jpeg)/" }
           relativeDirectory: { eq: "projects/lisbon" }
         }
+        sort: { fields: name }
       ) {
         edges {
           node {

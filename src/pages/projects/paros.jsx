@@ -11,6 +11,7 @@ const ParosProject = () => {
           extension: { regex: "/(jpg)|(png)|(jpeg)/" }
           relativeDirectory: { eq: "projects/paros" }
         }
+        sort: { fields: name }
       ) {
         edges {
           node {
