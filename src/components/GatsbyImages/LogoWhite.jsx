@@ -5,7 +5,7 @@ import "../../styles/effects/spin-left.css"
 const LogoWhite = () => {
   return (
     <StaticImage
-      src="../../images/logo-white.png"
+      src="../../images/icons/logo-white.png"
       style={{
         animationName: "spinLeft",
         animationDuration: "5000ms",

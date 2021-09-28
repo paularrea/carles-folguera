@@ -5,7 +5,7 @@ import "../../styles/effects/spin-right.css"
 const LogoBlack = () => {
   return (
     <StaticImage
-      src="../../images/bacana-logo.png"
+      src="../../images/icons/bacana-logo.png"
       style={{
         animationName: "spinRight",
         animationDuration: "5000ms",

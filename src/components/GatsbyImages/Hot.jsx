@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 const Hot = () => {
   return (
     <StaticImage
-      src="../../images/hot.png"
+      src="../../images/icons/hot.png"
       alt="Bacana white logo"
       placeholder="blurred"
       layout="fixed"

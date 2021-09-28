@@ -5,7 +5,7 @@ import "../../styles/effects/flash.css"
 const CommingSoon = () => {
   return (
     <StaticImage
-      src="../../images/comming-soon.png"
+      src="../../images/icons/comming-soon.png"
       alt="Bacana white logo"
       style={{
         WebkitAnimation: "flash linear 1s infinite",
