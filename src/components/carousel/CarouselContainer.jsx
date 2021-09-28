@@ -56,9 +56,11 @@ const CarouselContainer = () => {
               if (image.node.base.split(".")[0] === project.name) {
                 return (
                   <Carousel.Caption>
-                    <div className={caption}>
-                      <h1>{project.title}</h1>
+                    <div
+                      className={caption}
+                    >
                       <p>{project.sub_title}</p>
+                      <h1  style={{ fontFamily: project.font_family }}>{project.title}</h1>
                     </div>
                   </Carousel.Caption>
                 )

@@ -61,7 +61,9 @@ const ProjectsGrid = () => {
                     if (image.node.base.split(".")[0] === project.name) {
                       return (
                         <div className={caption}>
-                          <h3>{project.title}</h3>
+                          <h3 style={{ fontFamily: project.font_family }}>
+                            {project.title}
+                          </h3>
                           <p>{project.sub_title}</p>
                         </div>
                       )

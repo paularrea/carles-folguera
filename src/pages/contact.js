@@ -52,7 +52,7 @@ const Contact = () => (
               target="_blank"
               href="https://www.instagram.com/studiobacana/"
             >
-              @bacanastudio
+              @studiobacana
             </a>
           </p>
         </div>

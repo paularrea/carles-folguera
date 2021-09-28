@@ -18,7 +18,7 @@ const Home = () => {
       <Seo title="Home" />
       <div className={container}>
         <section className={img_container}>
-          <HomeVideo />
+          {/* <HomeVideo /> */}
         </section>
         <section className={container_separator}></section>
         <section className={text}>
