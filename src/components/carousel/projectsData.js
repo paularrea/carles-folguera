@@ -2,12 +2,12 @@ const data = [
     {
         name: 'costa-rica',
         title: 'Costa Rica',
-        sub_title: 'lorem ipsum.....'
+        sub_title: 'Paradise on earth'
     },
     {
         name: 'ericeira',
         title: 'Ericeira',
-        sub_title: 'lorem ipsum.....'
+        sub_title: 'Beach house'
     },
     {
         name: 'lisbon-marques-de-pombal',
