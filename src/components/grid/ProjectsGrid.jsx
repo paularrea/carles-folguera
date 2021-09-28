@@ -2,7 +2,8 @@ import React from "react"
 import { Grid, Row, Col } from "react-flexbox-grid"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
-import { container, item } from "./grid.module.scss"
+import { container, item, caption } from "./grid.module.scss"
+import data from "../carousel/projectsData"
 
 const ProjectsGrid = () => {
   const allImagesQuery = graphql`
@@ -39,7 +40,16 @@ const ProjectsGrid = () => {
       <Grid>
         <Row>
           {images.map(image => (
-            <Col style={{display:'flex', jusifyContent:'center', alignItems:'center'}} md={4} sm={12} xs={12}>
+            <Col
+              style={{
+                display: "flex",
+                jusifyContent: "center",
+                alignItems: "flex-start",
+              }}
+              md={4}
+              sm={12}
+              xs={12}
+            >
               <div className={item}>
                 <Link to={image.node.base.split(".")[0]}>
                   <Img
@@ -47,7 +57,18 @@ const ProjectsGrid = () => {
                     imgStyle={{ objectFit: "cover" }}
                     fluid={image.node.childImageSharp.fluid}
                   />
-                  <h5>{image.node.base.split(".")[0]}</h5>
+                  {data.map(project => {
+                    if (image.node.base.split(".")[0] === project.name) {
+                      return (
+                        <div className={caption}>
+                          <h3>{project.title}</h3>
+                          <p>{project.sub_title}</p>
+                        </div>
+                      )
+                    } else {
+                      return null
+                    }
+                  })}
                 </Link>
               </div>
             </Col>

@@ -4,14 +4,26 @@
 }
 
 .caption{
-    mix-blend-mode: exclusion;
     color: salmon;
     h1{
-        font-size: 70px;
+        font-size: 40px;
         font-weight: 700;
     }
     p{
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 300;
     }
 }
+
+@media (min-width: 870px) {
+    .caption{
+        h1{
+            font-size: 70px;
+            font-weight: 700;
+        }
+        p{
+            font-size: 20px;
+            font-weight: 300;
+        }
+    }
+    }

@@ -1,12 +1,12 @@
 .container{
-    padding: 0 2vh 3rem 2vh;
+    padding: 3rem 2vh 3rem 2vh;
     .item{
         position: relative;
         width: 100%;
-        height: 250px;
+        height: auto;
         margin-top: 3rem;
-        h5{
-            display: none;
+        .caption{           
+            color: black;
         }
         div{
             margin-bottom: 1rem;
@@ -26,26 +26,26 @@
                 img{
                     display: none;
                 }
-                h5{
+                .caption{
                     display: flex;
+                    flex-direction: column;
                     align-items: center;
                     justify-content: center;
                     text-align: center;
                 }
             }
-            h5{
+            .caption{
                 display: none;
                 position: absolute;
                 color: black;
-                font-size: 20px;
                 font-weight: 700;
                 text-transform: uppercase;
                 left: 0; 
                 right: 0; 
-                top: 10vw;
+                top: 8vw;
                 margin-left: auto; 
                 margin-right: auto; 
-                width: 100px;
+                width: 90%;
             }
         }
     }
