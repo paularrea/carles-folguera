@@ -1,29 +1,66 @@
-import { Link } from "gatsby"
+import { Link } from "react-scroll"
 import React from "react"
 import Burger from "./components/burger"
 import MediaQuery from "react-responsive"
-import { navbar, active, abs_title } from "./header.module.scss"
+import { navbar, active, abs_title, logo_container } from "./header.module.scss"
 import "./components/burger.css"
+import Logo from "../logo/Logo"
+import DarkModeToggle from "../darkMode/DarkModeToggle"
 
 const Header = () => {
   return (
     <div className={navbar}>
       <MediaQuery minWidth={870}>
-        <Link to="/">BACANA STUDIO</Link>
+        <Link
+          activeClass={active}
+          to="intro"
+          spy={true}
+          smooth={true}
+          offset={-40}
+          duration={1000}
+        >
+          <div className={logo_container}>
+            <Logo />
+          </div>
+        </Link>
         <nav>
-          <Link activeClassName={active} to="/projects">
+          <Link
+            activeClass={active}
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={-40}
+            duration={1000}
+          >
             Projects
           </Link>
-          <Link activeClassName={active} to="/shop">
-            Shop
+          <Link
+            activeClass={active}
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-40}
+            duration={1000}
+          >
+            About
           </Link>
-          <Link activeClassName={active} to="/contact">
+          <Link
+            activeClass={active}
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-40}
+            duration={1000}
+          >
             Contact
           </Link>
         </nav>
+        <DarkModeToggle />
       </MediaQuery>
       <MediaQuery maxWidth={870}>
-        <Link className={abs_title} to="/">BACANA STUDIO</Link>
+        <Link className={abs_title} to="/">
+          PAU LARREA
+        </Link>
         <Burger />
       </MediaQuery>
     </div>

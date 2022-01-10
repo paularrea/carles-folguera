@@ -10,8 +10,8 @@ const Burger = props => {
         <Link activeClassName={active} to="/projects">
           Projects
         </Link>
-        <Link activeClassName={active} to="/shop">
-          Shop
+        <Link activeClassName={active} to="/about">
+          About
         </Link>
         <Link activeClassName={active} to="/contact">
           Contact

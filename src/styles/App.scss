@@ -1,10 +1,12 @@
+@import "./global.scss";
+
 *{
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     outline: none !important;
   }
 html, body{
-  background-color: #FEFAF4;
+  background-color: var(--bg);
   margin: 0;
 }
 
@@ -12,25 +14,33 @@ h1,h2,h3,h4,h5,h6,p{
     padding: 0;
     margin: 0;
 }
-
+h1{
+  font-family: 'Segoe UI';
+}
+h1,h2,h3,h4,h5,h6{
+  color:var(--hColor)
+}
+p{
+  color:var(--pColor)
+}
 a{
 text-decoration: none !important;
-color: white !important;
+color: var(--aColor) !important;
     &:visited{
       text-decoration: none;
-      color: white;
+      color: var(--aColor);
     }
     &:hover{
       text-decoration: none;
-      color: white;
+      color: var(--aColor);
     }
     &:focus{
       text-decoration: none;
-      color: white;
+      color: var(--aColor);
     }
     &:active{
       text-decoration: none;
-      color: white;
+      color: var(--aColor);
     }
 }
 

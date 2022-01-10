@@ -1,7 +1,7 @@
 .cursor {
     width: 40px;
     height: 40px;
-    border: 1px solid #fefefe;
+    border: 1px solid #FEFAF4;
     border-radius: 100%;
     position: fixed;
     transform: translate(-50%, -50%);
@@ -18,12 +18,12 @@
   
   .cursor--link-hovered {
     transform: translate(-50%, -50%) scale(1.5);
-    background-color: #fefefe;
+    background-color: #FEFAF4;
   }
   
   .cursor--clicked {
     transform: translate(-50%, -50%) scale(0.9);
-    background-color: #fefefe;
+    background-color: #FEFAF4;
   }
   
   html *,
@@ -32,6 +32,6 @@
   }
   
   a {
-    color: #fefefe;
+    color: #FEFAF4;
   }
   

@@ -1,0 +1,14 @@
+body{
+--bg: #FEFAF4;
+--hColor: #292929;
+--pColor:#292929;
+--aColor:#292929;
+}
+
+body.dark{
+-webkit-font-smoothing: antialiased;
+--bg: #292929;
+--hColor: #FEFAF4;
+--pColor:#FEFAF4;
+--aColor:#FEFAF4;
+}
