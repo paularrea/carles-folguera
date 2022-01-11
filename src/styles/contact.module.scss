@@ -1,7 +1,12 @@
 .container{
 position: relative;
-height: calc(100vh - 10vh);
+height: auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
 width: 100%;
+min-height: 100vh;
 padding: 2rem 5vw;
     .box{
         font-size: 20px;
@@ -31,7 +36,6 @@ padding: 2rem 5vw;
 @media (min-width: 900px) {
     .container{
         position: relative;
-        height: calc(100vh - 10vh);
         width: 100%;
         padding: 5rem 5vw;
             .box{

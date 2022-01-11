@@ -1,12 +1,23 @@
 .container{
-    padding: 3rem 2vh 3rem 2vh;
+    width: 100%;
+    padding: 2rem 0;
     .item{
         position: relative;
         width: 100%;
-        height: auto;
-        margin-top: 3rem;
-        .caption{           
-            color: black;
+        height: 100%;
+        .caption{  
+            height: 30vw;
+            width: 30vw;
+            position: absolute;
+            left: 50%;
+            margin-left: -15vw;
+            top: 50%;
+            margin-top: -15vw;   
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            display: none; 
         }
         div{
             margin-bottom: 1rem;
@@ -16,36 +27,15 @@
 
 @media (min-width: 900px) {
     .container{
-        padding: 15vh 0;
+        padding: 5rem 0;
         .item{
-            width: 25vw;
-            height: 22vw;
-            margin-top: 0;
-            margin-bottom: 2rem;
             :hover{
+                .caption{
+                    display: flex;
+                }
                 img{
                     display: none;
                 }
-                .caption{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    text-align: center;
-                }
-            }
-            .caption{
-                display: none;
-                position: absolute;
-                color: black;
-                font-weight: 700;
-                text-transform: uppercase;
-                left: 0; 
-                right: 0; 
-                top: 8vw;
-                margin-left: auto; 
-                margin-right: auto; 
-                width: 90%;
             }
         }
     }

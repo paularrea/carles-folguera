@@ -3,7 +3,7 @@ import logo from "../../images/icons/Logo.png"
 
 const Logo = () => {
   return (
-      <img src={logo} alt="logo" />
+      <h2 style={{fontWeight:600}}>PAU<br />LARREA</h2>
   )
 }
 

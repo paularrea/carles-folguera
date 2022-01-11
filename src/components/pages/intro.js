@@ -17,17 +17,7 @@ const Intro = () => {
         <section className={container_separator}></section>
         <section className={text}>
           <h1>
-            Hello! I'm{" "}
-            <Link
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={-40}
-              duration={1000}
-            >
-              Pau
-            </Link>
-            , and I'm a FRONTEND DEVELOPER based in Barcelona.
+            Hello! I'm Pau, and I'm a FRONTEND DEVELOPER based in Barcelona.
           </h1>
         </section>
       </div>

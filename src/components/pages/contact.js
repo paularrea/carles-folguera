@@ -3,9 +3,9 @@ import Seo from "../seo"
 import { container, box, flex_box } from "../../styles/contact.module.scss"
 
 const Contact = () => (
-  <div id="contact">
+  <>
     <Seo title="Contact" />
-    <div className={container}>
+    <div id="contact" className={container}>
       <section className={box} style={{ marginBottom: "3rem" }}>
         <h1 style={{ fontWeight: 700 }}>I'd love to hear from you.</h1>
         <p>
@@ -48,7 +48,7 @@ const Contact = () => (
         </div>
       </section>
     </div>
-  </div>
+  </>
 )
 
 export default Contact
