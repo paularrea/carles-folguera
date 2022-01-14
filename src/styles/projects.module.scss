@@ -1,0 +1,164 @@
+.container{
+    position: relative;
+    z-index: 2;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem 5vw;
+    .item{
+        margin: 10rem 0;
+        width: 100%;
+            position: relative;
+            .img{
+            width: 70vw;
+            height: 90vh;
+        }
+        h1{
+            text-align: right;
+            text-transform: uppercase;
+            position: absolute;
+            width: 90%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-style: italic;
+            line-height: 20vw;
+            font-size: 20vw;
+        }
+        h1,p{
+            font-variant-ligatures: discretionary-ligatures;
+            font-family: 'Moniqa'; 
+        }
+        .phrase{
+            color: var(--3Color);
+            position: absolute;
+            bottom: 2vw;
+            right: 5vw;
+            width: 60%;
+            line-height: 8vw;
+            font-size: 8vw;
+        }
+        .stack{
+            color: var(--3Color);
+            text-transform: uppercase;
+            position: absolute;
+            transform: rotate(-90deg);
+            top: 2rem;
+            right: -1.5rem;
+            line-height: 8vw;
+            font-size: 8vw;
+        }
+
+    }
+    .alternate{
+        margin: 2rem 0;
+        width: 100%;
+        position: relative;
+            .img{
+            float: right;
+            width: 70vw;
+            height: 90vh;
+        }
+        h1{
+            text-align: left;
+            text-transform: uppercase;
+            position: absolute;
+            width: 90%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-style: italic;
+            line-height: 20vw;
+            font-size: 20vw;
+        }
+        h1,p{
+            font-variant-ligatures: discretionary-ligatures;
+            font-family: 'Moniqa'; 
+        }
+        .phrase{
+            color: var(--3Color);
+            position: absolute;
+            bottom: 2vw;
+            left: 5vw;
+            width: 60%;
+            line-height: 8vw;
+            font-size: 8vw;
+        }
+        .stack{
+            color: var(--3Color);
+            text-transform: uppercase;
+            position: absolute;
+            transform: rotate(-90deg);
+            top: 2rem;
+            left: -1.5rem;
+            line-height: 8vw;
+            font-size: 8vw;
+        }
+
+    }
+}
+
+@media (min-width: 900px) {
+    .container{
+        .item{
+            .img{
+                width: 40vw;
+                height: 90vh;
+            }
+            h1{
+                text-align: center;
+                width: 50%;
+                top: 60%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                line-height: 10vw;
+                font-size: 12vw;
+            }
+            .stack, .phrase{
+                line-height: 3vw;
+                font-size: 3vw;
+            }
+            .phrase{
+                max-width: 600px;
+                top: 2vw;
+                right: 0;
+            }
+            .stack{
+                top: 20vw;
+                right: 0;
+            }
+        }
+        .alternate{
+            .img{
+                width: 40vw;
+                height: 90vh;
+            }
+            h1{
+                text-align: center;
+                width: 50%;
+                top: 60%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                line-height: 10vw;
+                font-size: 12vw;
+            }
+            .stack, .phrase{
+                line-height: 3vw;
+                font-size: 3vw;
+            }
+            .phrase{
+                max-width: 600px;
+                top: 2vw;
+                left: 0;
+            }
+            .stack{
+                top: 20vw;
+                left: 0;
+            }
+        }
+    }
+}

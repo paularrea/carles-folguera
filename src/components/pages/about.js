@@ -6,7 +6,12 @@ const About = () => (
   <>
     <Seo title="About" />
     <div id="about" className={container}>
-      <h1>About</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia iure
+        totam obcaecati beatae adipisci hic animi <span>facilis voluptatum </span>  
+         perspiciatis minima atque, praesentium, sint nemo, deserunt dolorem
+        reiciendis id sunt voluptatibus?
+      </p>
     </div>
   </>
 )

@@ -1,5 +1,6 @@
 .container{
     position: relative;
+    z-index: 2;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -8,15 +9,17 @@
     width: 100%;
     min-height: 100vh;
     padding: 2rem 5vw;
-    .box{
-        margin-bottom: 4rem;
-        .flex_container{
-            padding-top: 2rem;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            
-        }
+    p, span{
+      font-variant-ligatures: discretionary-ligatures;
+      font-family: 'Moniqa';
+      text-transform: uppercase;
+      font-style: italic;
+      line-height: 14vw;
+      font-size: 15vw;
+      font-weight: 300;
+      span{
+        color: var(--secondaryColor);
+      }
     }
 }
 
@@ -24,5 +27,9 @@
   .container{
     padding: 5rem 5vw;
       text-align: center;
+      p,span{
+        line-height: 5vw;
+        font-size: 5vw;
+      }
   }
 }

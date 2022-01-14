@@ -1,14 +1,18 @@
 body{
---bg: #FEFAF4;
---hColor: #292929;
---pColor:#292929;
---aColor:#292929;
+--bg: #EFD8BE;
+--hColor: #091314;
+--pColor:#091314;
+--aColor:#091314;
+--secondaryColor: #875036;
+--3Color: white;
 }
 
 body.dark{
 -webkit-font-smoothing: antialiased;
---bg: #292929;
---hColor: #FEFAF4;
---pColor:#FEFAF4;
---aColor:#FEFAF4;
+--bg: #091314;
+--hColor: #EFD8BE;
+--pColor:#EFD8BE;
+--aColor:#EFD8BE;
+--secondaryColor: #FFB047;
+--3Color: #425B58;
 }

@@ -13,11 +13,22 @@ const Intro = () => {
     <div id="intro">
       <Seo title="Pau Larrea" />
       <div className={container}>
-        <section className={img_container}></section>
+        {/* <section className={img_container}></section> */}
         <section className={container_separator}></section>
         <section className={text}>
           <h1>
-            Hello! I'm Pau, and I'm a FRONTEND DEVELOPER based in Barcelona.
+            Hello everyone!
+            <br />
+            I'm Pau, a{" "}
+            <span>
+              {" "}
+              FRONTEND
+              <br />
+              DEVELOPER{" "}
+            </span>
+            based in
+            <br />
+            Barcelona.
           </h1>
         </section>
       </div>

@@ -1,51 +1,48 @@
 import * as React from "react"
 import Seo from "../seo"
-import { container, box, flex_box } from "../../styles/contact.module.scss"
+import {
+  container,
+  box,
+  flex_box,
+  text,
+} from "../../styles/contact.module.scss"
 
+const details = [
+  {
+    title: "Drop me a line",
+    aTag: "mailto:paularrea12@gmail.com",
+    aText: "paularrea12@gmail.com",
+  },
+  {
+    title: "Call me",
+    aTag: "tel:+351912677606",
+    aText: "+34 638 305 414",
+  },
+]
 const Contact = () => (
   <>
     <Seo title="Contact" />
     <div id="contact" className={container}>
-      <section className={box} style={{ marginBottom: "3rem" }}>
-        <h1 style={{ fontWeight: 700 }}>I'd love to hear from you.</h1>
-        <p>
+      <section>
+        <h1>I'd love to hear from you.</h1>
+        <p className={text}>
           Need a hand? Let's talk about your website or project. <br /> Here's
           how to reach me.
         </p>
       </section>
       <section className={flex_box}>
-        <div className={box}>
-          <p style={{ fontWeight: 700 }}>Drop me a line</p>
-          <p>
-            <a
-              rel="noreferrer"
-              target="_blank"
-              href="mailto:paularrea12@gmail.com"
-            >
-              paularrea12@gmail.com
-            </a>
-          </p>
-        </div>
-        <div className={box}>
-          <p style={{ fontWeight: 700 }}>Call me</p>
-          <p>
-            <a rel="noreferrer" target="_blank" href="tel:+351912677606">
-              +34 638 305 414
-            </a>
-          </p>
-        </div>
-        <div className={box}>
-          <p style={{ fontWeight: 700 }}>Follow me</p>
-          <p>
-            <a
-              rel="noreferrer"
-              target="_blank"
-              href="https://www.instagram.com/paularrea/"
-            >
-              @paularrea
-            </a>
-          </p>
-        </div>
+        {details.map(item => {
+          return (
+            <div className={box}>
+              <p>
+                {item.title}{" "}
+                <a rel="noreferrer" target="_blank" href={item.aTag}>
+                  {item.aText}
+                </a>
+              </p>
+            </div>
+          )
+        })}
       </section>
     </div>
   </>

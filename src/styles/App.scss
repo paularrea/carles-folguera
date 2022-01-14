@@ -1,8 +1,10 @@
 @import "./global.scss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 *{
+  font-variant-ligatures: discretionary-ligatures;
+  font-family: 'Moniqa';
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
     outline: none !important;
   }
 html, body{
@@ -14,9 +16,6 @@ h1,h2,h3,h4,h5,h6,p{
     padding: 0;
     margin: 0;
 }
-h1{
-  font-family: 'Segoe UI';
-}
 h1,h2,h3,h4,h5,h6{
   color:var(--hColor)
 }
@@ -25,22 +24,22 @@ p{
 }
 a{
 text-decoration: none !important;
-color: var(--aColor) !important;
+color: var(--secondaryColor) !important;
     &:visited{
       text-decoration: none;
-      color: var(--aColor);
+      color: var(--secondaryColor);
     }
     &:hover{
       text-decoration: none;
-      color: var(--aColor);
+      color: var(--secondaryColor);
     }
     &:focus{
       text-decoration: none;
-      color: var(--aColor);
+      color: var(--secondaryColor);
     }
     &:active{
       text-decoration: none;
-      color: var(--aColor);
+      color: var(--secondaryColor);
     }
 }
 
