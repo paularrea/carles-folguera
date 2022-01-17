@@ -1,9 +1,9 @@
 import React from "react"
 import { Link } from "react-scroll"
 import Seo from "../seo"
+import Fade from "react-reveal/Fade"
 import {
   container,
-  img_container,
   text,
   container_separator,
 } from "../../styles/intro.module.scss"
@@ -13,24 +13,33 @@ const Intro = () => {
     <div id="intro">
       <Seo title="Pau Larrea" />
       <div className={container}>
-        {/* <section className={img_container}></section> */}
         <section className={container_separator}></section>
-        <section className={text}>
-          <h1>
-            Hello everyone!
-            <br />
-            I'm Pau, a{" "}
-            <span>
-              {" "}
-              FRONTEND
+        <Fade>
+          <section className={text}>
+            <h1>
+              Hello everyone!
               <br />
-              DEVELOPER{" "}
-            </span>
-            based in
-            <br />
-            Barcelona.
-          </h1>
-        </section>
+              I'm Pau, a{" "}
+              <Link
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={-40}
+                duration={1000}
+              >
+                <span>
+                  {" "}
+                  FRONTEND
+                  <br />
+                  DEVELOPER{" "}
+                </span>
+              </Link>
+              based in
+              <br />
+              Barcelona.
+            </h1>
+          </section>
+        </Fade>
       </div>
     </div>
   )

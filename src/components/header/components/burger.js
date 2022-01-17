@@ -24,6 +24,7 @@ const Burger = props => {
       <div>
         <DarkModeToggle />
       </div>
+      <br />
       <Link
         activeClass={active}
         to="projects"
