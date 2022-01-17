@@ -7,7 +7,6 @@ import About from "../components/pages/about"
 import Contact from "../components/pages/contact"
 
 const Home = ({ data }) => {
-  console.log(data)
   const projectsList = data.allMarkdownRemark.nodes
   return (
     <Layout>
@@ -28,6 +27,7 @@ export const query = graphql`
           slug
           stack
           title
+          resume
           thumb {
             childImageSharp {
               fluid {

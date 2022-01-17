@@ -1,22 +1,58 @@
-import React from "react"
-import { Link } from "gatsby"
+import React, { useState } from "react"
+import { Link } from "react-scroll"
 import { active } from "../header.module.scss"
 import { slide as Menu } from "react-burger-menu"
 
 const Burger = props => {
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  const handleStateChange = state => {
+    setMenuOpen(state.isOpen)
+  }
+
+  const closeMenu = () => {
+    setMenuOpen(false)
+  }
   return (
-    <Menu {...props}>
-      <nav>
-        <Link activeClassName={active} to="/projects">
-          Projects
-        </Link>
-        <Link activeClassName={active} to="/about">
-          About
-        </Link>
-        <Link activeClassName={active} to="/contact">
-          Contact
-        </Link>
-      </nav>
+    <Menu
+      right
+      isOpen={menuOpen}
+      onStateChange={state => handleStateChange(state)}
+      {...props}
+    >
+      <Link
+        activeClass={active}
+        to="projects"
+        spy={true}
+        smooth={true}
+        offset={-40}
+        duration={1000}
+        onClick={closeMenu}
+      >
+        Projects
+      </Link>
+      <Link
+        activeClass={active}
+        to="about"
+        spy={true}
+        smooth={true}
+        offset={-40}
+        duration={1000}
+        onClick={closeMenu}
+      >
+        About
+      </Link>
+      <Link
+        activeClass={active}
+        to="contact"
+        spy={true}
+        smooth={true}
+        offset={-40}
+        duration={1000}
+        onClick={closeMenu}
+      >
+        Contact
+      </Link>
     </Menu>
   )
 }

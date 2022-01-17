@@ -29,8 +29,12 @@ const Layout = ({ children }) => {
       <MediaQuery minWidth={900}>
         <AnimatedCursor />
       </MediaQuery>
-      <Header />
-      <main className={page}>{children}</main>
+      <div id="App">
+        <Header pageWrapId={"page-wrap"} outerContainerId={"App"}/>
+        <div id="page-wrap">
+          <main className={page}>{children}</main>
+        </div>
+      </div>
     </>
   )
 }

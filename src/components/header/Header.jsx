@@ -2,12 +2,12 @@ import { Link } from "react-scroll"
 import React from "react"
 import Burger from "./components/burger"
 import MediaQuery from "react-responsive"
-import { navbar, active, abs_title, logo_container } from "./header.module.scss"
+import { logo, navbar, active, logo_container } from "./header.module.scss"
 import "./components/burger.css"
 import Logo from "../logo/Logo"
 import DarkModeToggle from "../darkMode/DarkModeToggle"
 
-const Header = () => {
+const Header = ({pageWrapId, outerContainerId}) => {
   const isInProject = window.location.href.indexOf("projects") > -1
   const nav = (
     <nav>
@@ -72,10 +72,14 @@ const Header = () => {
         <DarkModeToggle />
       </MediaQuery>
       <MediaQuery maxWidth={870}>
-        <Link className={abs_title} to="/">
-          PAU<br />LARREA
+        <Link to="/">
+          <h2 className={logo}>
+            PAU
+            <br />
+            LARREA
+          </h2>
         </Link>
-        <Burger />
+        <Burger pageWrapId={pageWrapId} outerContainerId={outerContainerId} />
       </MediaQuery>
     </div>
   )

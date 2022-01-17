@@ -1,10 +1,11 @@
 ---
-slug: "my-third-post"
-stack: "JS, Gatsby"
-title: "My ss blog post"
+slug: "bacana-studio"
+stack: "GatsbyJS - ReactJS - Sass"
+title: "Bacana Studio"
 date: 2021-11-22
-thumb: '../images/projects/thumbs/thirdPost.png'
+thumb: '../images/projects/thumbs/bacanaStudio.jpg'
 featuredImg: '../images/projects/thumbs/firstPost.png'
+resume: 'Static corporate website for a Wholesale supplier who is based on B2B business models on the Swiss market. Working closely with the IT team and the UX/UI designer we worked with Adobe XD for the design and creation of a prototype of the user experience for the site which has helped me to develop the project in a much faster, more comfortable and structured way.'
 ---
 
 ## Frist Thing
