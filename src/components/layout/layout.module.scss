@@ -1,8 +1,9 @@
 @font-face {
-    font-family: "Moniqa";
-    src: local("Moniqa"),
-    url("../../fonts/CYR_CT_OP_Emberly\ Regular\ [wdth\,wght]-VF.otf") format("opentype");
-  }
+    font-family: 'Moniqa';
+    src: local('Moniqa'),
+         url('../../fonts/CYR_CT_OP_Emberly\ Regular\ [wdth\,wght]-VF.ttf') format('truetype'),
+         url('../../fonts/CYR_CT_OP_Emberly\ Regular\ [wdth\,wght]-VF.otf') format('opentype');
+}
 
 .page{
     padding-top: 10vh;

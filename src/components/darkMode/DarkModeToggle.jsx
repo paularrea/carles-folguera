@@ -7,14 +7,6 @@ const DarkModeToggle = () => {
     <ThemeToggler>
       {({ theme, toggleTheme }) => {
         return (
-          // <label>
-          //   <input
-          //     type="checkbox"
-          //     onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
-          //     checked={theme === "dark"}
-          //   />{" "}
-          //   Dark mode
-          // </label>
           <Switch
             type="checkbox"
             onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
