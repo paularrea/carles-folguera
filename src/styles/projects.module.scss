@@ -15,7 +15,8 @@
             position: relative;
             .img{
             width: 70vw;
-            height: 90vh;
+            height: 50vh;
+            min-height: 400px;
         }
         h1{
             text-align: right;
@@ -64,7 +65,8 @@
             .img{
             float: right;
             width: 70vw;
-            height: 90vh;
+            height: 50vh;
+            min-height: 400px;
         }
         h1{
             text-align: left;
@@ -114,7 +116,7 @@
             margin: 5rem 0;
             .img{
                 width: 40vw;
-                height: 90vh;
+                height:90vh;
             }
             h1{
                 text-align: center;

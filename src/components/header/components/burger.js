@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { Link } from "react-scroll"
 import { active } from "../header.module.scss"
 import { slide as Menu } from "react-burger-menu"
+import DarkModeToggle from "../../darkMode/DarkModeToggle"
 
 const Burger = props => {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -20,6 +21,9 @@ const Burger = props => {
       onStateChange={state => handleStateChange(state)}
       {...props}
     >
+      <div>
+        <DarkModeToggle />
+      </div>
       <Link
         activeClass={active}
         to="projects"

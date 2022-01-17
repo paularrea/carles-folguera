@@ -31,7 +31,7 @@
         font-family: 'Moniqa';
         text-transform: uppercase;
         font-weight: 400 !important;
-        font-size: 25px !important;
+        font-size: 35px !important;
         color: var(--aColor) !important;
         -webkit-transition: font-size .5s ease;
         -moz-transition: font-size .5s ease;
@@ -40,7 +40,7 @@
     } 
     .active{
         color: var(--secondaryColor) !important;
-        font-size: 45px !important;
+        font-size: 55px !important;
         font-weight: 600 !important;
     }
     nav{
@@ -58,10 +58,11 @@
     height: 100px;
     a{
         font-weight: 600;
-        font-size: 16px;
+        font-size: 20px !important;
     } 
     .active{
         text-decoration: underline;
+        font-size: 35px !important;
     }
     nav{
         display: flex;
