@@ -12,37 +12,40 @@ import {
   phrase,
 } from "../../styles/projects.module.scss"
 import { Link } from "gatsby"
+import Button from "../buttons/button"
 
 const Projects = ({ projectsList }) => {
-  console.log(projectsList)
   return (
     <div className={container} id="projects">
       <Seo title="Projects" />
       {projectsList.map((project, key) => {
-        console.log(key)
         return (
           <Fade bottom>
-          <div className={key % 2 === 0 ? item : alternate}>
-            <Link to={project.frontmatter.slug}>
-              <div className={img}>
-                <Img
-                  style={{ height: "100%", width: "100%" }}
-                  imgStyle={{ objectFit: "cover" }}
-                  fluid={project.frontmatter.thumb.childImageSharp.fluid}
-                />
-              </div>
-            </Link>
-            <Link to={project.frontmatter.slug}>
+            <div className={key % 2 === 0 ? item : alternate}>
+              <Link to={project.frontmatter.slug}>
+                <div className={img}>
+                  <Img
+                    style={{ height: "100%", width: "100%" }}
+                    imgStyle={{ objectFit: "cover" }}
+                    fluid={project.frontmatter.thumb.childImageSharp.fluid}
+                  />
+                </div>
+              </Link>
+              <Link to={project.frontmatter.slug}>
                 <h1>{project.frontmatter.title}</h1>
-            </Link>
+              </Link>
 
-            <div className={stack}>
-              <p>{project.frontmatter.stack}</p>
+              <div className={stack}>
+                <p>{project.frontmatter.stack}</p>
+              </div>
+              <p className={phrase}>
+                <MediaQuery minWidth={900}>
+                  {project.frontmatter.resume}
+                </MediaQuery>
+                <br />
+                <Button to={project.frontmatter.slug}>See more {'->'}</Button>
+              </p>
             </div>
-            <MediaQuery minWidth={900}>
-              <p className={phrase}>{project.frontmatter.resume}</p>
-            </MediaQuery>
-          </div>
           </Fade>
         )
       })}

@@ -10,7 +10,7 @@
     min-height: 100vh;
     padding: 2rem 5vw;
     .item{
-        margin: 2rem 0;
+        margin: 1rem 0;
         width: 100%;
             position: relative;
             .img{
@@ -29,7 +29,7 @@
             position: absolute;
             width: 90%;
             top: 50%;
-            left: 0%;
+            left: 50%;
             text-align: right;
             text-transform: uppercase;
             transform: translate(-50%, -50%);
@@ -45,8 +45,8 @@
         .phrase{
             color: var(--3Color);
             position: absolute;
-            bottom: 2vw;
-            right: 5vw;
+            top: 0;
+            right: 0;
             line-height: 8vw;
             font-size: 8vw;
         }
@@ -65,7 +65,7 @@
 
     }
     .alternate{
-        margin: 2rem 0;
+        margin: 1rem 0;
         width: 100%;
         position: relative;
         .img{
@@ -101,8 +101,8 @@
         .phrase{
             color: var(--3Color);
             position: absolute;
-            bottom: 2vw;
-            left: 5vw;
+            top: 0;
+            left: 0;
             line-height: 8vw;
             font-size: 8vw;
         }

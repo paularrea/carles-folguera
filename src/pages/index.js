@@ -28,6 +28,7 @@ export const query = graphql`
           stack
           title
           resume
+          url
           thumb {
             childImageSharp {
               fluid {

@@ -6,8 +6,9 @@ import { logo, navbar, active, logo_container } from "./header.module.scss"
 import "./components/burger.css"
 import Logo from "../logo/Logo"
 import DarkModeToggle from "../darkMode/DarkModeToggle"
+import CloseButton from "../buttons/close"
 
-const Header = ({pageWrapId, outerContainerId}) => {
+const Header = ({ pageWrapId, outerContainerId }) => {
   const isInProject = window.location.href.indexOf("projects") > -1
   const nav = (
     <nav>
@@ -79,7 +80,11 @@ const Header = ({pageWrapId, outerContainerId}) => {
             LARREA
           </h2>
         </Link>
-        <Burger pageWrapId={pageWrapId} outerContainerId={outerContainerId} />
+        {isInProject ? (
+          <CloseButton/>
+        ) : (
+          <Burger pageWrapId={pageWrapId} outerContainerId={outerContainerId} />
+        )}
       </MediaQuery>
     </div>
   )

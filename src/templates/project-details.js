@@ -1,26 +1,27 @@
 import React from "react"
 import Layout from "../components/layout/layout"
-import { container, img, text } from "../styles/project-details.module.scss"
-import { graphql, Link } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
+import { container, flex, md, abs } from "../styles/project-details.module.scss"
+import { graphql } from "gatsby"
+import TemplateHeader from "../components/header/TemplateHeader"
 
-export default function ProjectDetails({ data }) {
+export default function ProjectDetails({ data, pageContext }) {
+  const { previous, next } = pageContext
   const { html } = data.markdownRemark
   const { title, stack, featuredImg } = data.markdownRemark.frontmatter
-
   return (
     <Layout>
+      <div className={abs}>
+        <TemplateHeader />
+      </div>
       <div className={container}>
-        <h3>{title}</h3>
-        <h6>{stack}</h6>
-        <div className={img}>
-          <GatsbyImage
-            image={featuredImg.childImageSharp.gatsbyImageData}
-            alt="featured"
-          />
+        <div className={flex}>
+          {previous && <a href={previous.slug}>{"<"} Previous</a>}
+          <h3>{title}</h3>
+          {next && <a href={next.slug}>Next {">"}</a>}
         </div>
-        <div className={text} dangerouslySetInnerHTML={{ __html: html }} />
-          <Link to="/">Go back</Link>
+        <h6>{stack}</h6>
+        <div></div>
+        <div className={md} dangerouslySetInnerHTML={{ __html: html }} />
       </div>
     </Layout>
   )
@@ -35,10 +36,7 @@ export const query = graphql`
         title
         featuredImg {
           childImageSharp {
-            gatsbyImageData(
-              layout: FULL_WIDTH
-              placeholder: BLURRED
-            )
+            gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
           }
         }
       }

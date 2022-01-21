@@ -5,6 +5,7 @@ body{
 --aColor:#091314;
 --secondaryColor: #875036;
 --3Color: white;
+--filter: none;
 }
 
 body.dark{
@@ -15,4 +16,5 @@ body.dark{
 --aColor:#EFD8BE;
 --secondaryColor: #FFB047;
 --3Color: #425B58;
+--filter: brightness(0) invert(1);
 }
