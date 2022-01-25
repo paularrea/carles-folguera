@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import MediaQuery from "react-responsive"
 import logo from "../../images/icons/logo.png"
 import favicon from "../../images/icons/favicon.png"
@@ -7,7 +7,6 @@ import darkLogo from "../../images/icons/logo-dark.png"
 import { container, img } from "./logo.module.scss"
 
 const Logo = ({changeMode}) => {
-
   return (
     <div className={container}>
       <MediaQuery maxWidth={870}>
