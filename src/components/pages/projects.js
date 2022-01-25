@@ -43,7 +43,7 @@ const Projects = ({ projectsList }) => {
                   {project.frontmatter.resume}
                 </MediaQuery>
                 <br />
-                <Button to={project.frontmatter.slug}>See more {'->'}</Button>
+                <Button to={project.frontmatter.slug}>See more {"->"}</Button>
               </p>
             </div>
           </Fade>

@@ -1,4 +1,3 @@
-import { Link } from "react-scroll"
 import React from "react"
 import { logo, navbar } from "./header.module.scss"
 import "./components/burger.css"

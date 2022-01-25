@@ -7,7 +7,7 @@ import TemplateHeader from "../components/header/TemplateHeader"
 export default function ProjectDetails({ data, pageContext }) {
   const { previous, next } = pageContext
   const { html } = data.markdownRemark
-  const { title, stack, featuredImg } = data.markdownRemark.frontmatter
+  const { title, stack } = data.markdownRemark.frontmatter
   return (
     <Layout>
       <div className={abs}>
@@ -20,7 +20,6 @@ export default function ProjectDetails({ data, pageContext }) {
           {next && <a href={next.slug}>Next {">"}</a>}
         </div>
         <h6>{stack}</h6>
-        <div></div>
         <div className={md} dangerouslySetInnerHTML={{ __html: html }} />
       </div>
     </Layout>

@@ -1,5 +1,6 @@
 body{
---bg: #EFD8BE;
+--bg: radial-gradient(58.95% 46.94% at 50% 50%, #efd8be8e 0%, #EFD8BE 100%);
+--solidBg: #EFD8BE;
 --hColor: #091314;
 --pColor:#091314;
 --aColor:#091314;
@@ -10,7 +11,8 @@ body{
 
 body.dark{
 -webkit-font-smoothing: antialiased;
---bg: #091314;
+--bg: radial-gradient(58.95% 46.94% at 50% 50%, #091314da 0%, #091314 100%);
+--solidBg: #091314;
 --hColor: #EFD8BE;
 --pColor:#EFD8BE;
 --aColor:#EFD8BE;

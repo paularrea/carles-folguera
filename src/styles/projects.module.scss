@@ -45,10 +45,11 @@
         .phrase{
             color: var(--3Color);
             position: absolute;
+            text-align: right;
             top: 0;
             right: 0;
-            line-height: 8vw;
-            font-size: 8vw;
+            line-height: 40px !important;
+            font-size: 35px !important;
         }
         .stack{
             color: var(--3Color);
@@ -101,10 +102,11 @@
         .phrase{
             color: var(--3Color);
             position: absolute;
+            text-align: left;
             top: 0;
             left: 0;
-            line-height: 8vw;
-            font-size: 8vw;
+            line-height: 40px !important;
+            font-size: 35px !important;
         }
         .stack{
             color: var(--3Color);
@@ -128,7 +130,7 @@
             margin: 5rem 0;
             .img{
                 width: 40vw;
-                height:90vh;
+                height:80vh;
                 box-shadow: none;
             }
             h1{
@@ -147,10 +149,6 @@
                 font-size: 3vw;
             }
             .phrase{
-                line-height: 2.5vw;
-                font-size: 2vw;
-            }
-            .phrase{
                 max-width: 70%;
                 top: 2vw;
                 right: 0;
@@ -164,7 +162,7 @@
             margin: 5rem 0;
             .img{
                 width: 40vw;
-                height: 90vh;
+                height: 80vh;
                 box-shadow: none;
             }
             h1{

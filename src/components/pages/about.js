@@ -7,10 +7,10 @@ const About = () => (
     <Seo title="About" />
     <div id="about" className={container}>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia iure
-        totam obcaecati beatae adipisci hic animi <span>facilis voluptatum </span>  
-         perspiciatis minima atque, praesentium, sint nemo, deserunt dolorem
-        reiciendis id sunt voluptatibus?
+        Hi I am Pau, a <span>frontend developer</span> passionate about building{" "}
+        <span>beautiful</span> and intuitive <span>designs</span> that improves
+        people's lives. While I'm not <span>coding</span> or pushing pixels,
+        you'll find me surfing or traveling around.
       </p>
     </div>
   </>

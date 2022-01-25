@@ -8,7 +8,7 @@
     outline: none !important;
   }
 html, body{
-  background-color: var(--bg);
+  background: var(--bg);
   margin: 0;
 }
 
@@ -20,7 +20,7 @@ h1,h2,h3,h4,h5,h6{
   color:var(--hColor)
 }
 p{
-  color:var(--pColor)
+  color:var(--pColor);
 }
 a{
 text-decoration: none !important;

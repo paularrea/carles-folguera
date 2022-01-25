@@ -8,7 +8,9 @@ thumb: '../images/projects/thumbs/kolyy.jpg'
 featuredImg: '../images/projects/thumbs/firstPost.png'
 resume: 'An intelligent dog collar designed to satisfy those dog lovers who know the importance of keeping their dog healthy and active.'
 ---
-
+<p>Implementation of the page layouts of a static site using GatsbyJS and styled with SASS. Working closely with the IT team and the UX/UI designer we worked with Adobe XD for the design and creation of a prototype of the user experience for the site which has helped me to develop the project in a much faster, more comfortable and structured way.</p>
+<br/>
+<section>
 <video
         style='border-radius:40px'
         width="250"
@@ -22,7 +24,6 @@ resume: 'An intelligent dog collar designed to satisfy those dog lovers who know
             type="video/mp4"
           />
 </video>
-
 <video
         style='border-radius:40px'
         width="250"
@@ -36,7 +37,6 @@ resume: 'An intelligent dog collar designed to satisfy those dog lovers who know
             type="video/mp4"
           />
 </video>
-
 <video
         style='border-radius:40px'
         width="250"
@@ -50,7 +50,6 @@ resume: 'An intelligent dog collar designed to satisfy those dog lovers who know
             type="video/mp4"
           />
 </video>
-
 <video
         style='border-radius:40px'
         width="250"
@@ -64,3 +63,4 @@ resume: 'An intelligent dog collar designed to satisfy those dog lovers who know
             type="video/mp4"
           />
 </video>
+</section>
