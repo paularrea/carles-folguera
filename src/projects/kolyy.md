@@ -8,7 +8,10 @@ thumb: '../images/projects/thumbs/kolyy.jpg'
 featuredImg: '../images/projects/thumbs/firstPost.png'
 resume: 'An intelligent dog collar designed to satisfy those dog lovers who know the importance of keeping their dog healthy and active.'
 ---
+<article>
 <p>Implementation of the page layouts of a static site using GatsbyJS and styled with SASS. Working closely with the IT team and the UX/UI designer we worked with Adobe XD for the design and creation of a prototype of the user experience for the site which has helped me to develop the project in a much faster, more comfortable and structured way.</p>
+      <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/kolyy%2Fmockup-kolyy.png?alt=media&token=b6a0bdda-48fe-447a-92dc-79a03473806f" alt="mockup kolyy" />
+</article>
 <br/>
 <section>
 <video

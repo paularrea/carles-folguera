@@ -22,7 +22,7 @@ const Burger = props => {
       {...props}
     >
       <div>
-        <DarkModeToggle />
+        <DarkModeToggle setChangeMode={props.setChangeMode} />
       </div>
       <br />
       <Link

@@ -1,5 +1,5 @@
 import { Link } from "react-scroll"
-import React from "react"
+import React, { useEffect, useState } from "react"
 import Burger from "./components/burger"
 import MediaQuery from "react-responsive"
 import { logo, navbar, active, logo_container } from "./header.module.scss"
@@ -9,7 +9,7 @@ import DarkModeToggle from "../darkMode/DarkModeToggle"
 import CloseButton from "../buttons/close"
 
 const Header = ({ pageWrapId, outerContainerId }) => {
-  const isInProject = window.location.href.indexOf("projects") > -1
+  const [changeMode, setChangeMode] = useState(false);
   const nav = (
     <nav>
       <Link
@@ -55,36 +55,23 @@ const Header = ({ pageWrapId, outerContainerId }) => {
       duration={1000}
     >
       <div className={logo_container}>
-        <Logo />
+        <Logo changeMode={changeMode} />
       </div>
     </Link>
-  )
-  const homeLink = (
-    <a href="/">
-      <Logo />
-    </a>
   )
 
   return (
     <div className={navbar}>
       <MediaQuery minWidth={870}>
-        {isInProject ? homeLink : scrollToTop}
-        {!isInProject && nav}
-        <DarkModeToggle />
+        {scrollToTop}
+        {nav}
+        <DarkModeToggle setChangeMode={setChangeMode} />
       </MediaQuery>
       <MediaQuery maxWidth={870}>
         <Link to="/">
-          <h2 className={logo}>
-            PAU
-            <br />
-            LARREA
-          </h2>
+        <Logo changeMode={changeMode} />
         </Link>
-        {isInProject ? (
-          <CloseButton/>
-        ) : (
-          <Burger pageWrapId={pageWrapId} outerContainerId={outerContainerId} />
-        )}
+        <Burger setChangeMode={setChangeMode} pageWrapId={pageWrapId} outerContainerId={outerContainerId} />
       </MediaQuery>
     </div>
   )
