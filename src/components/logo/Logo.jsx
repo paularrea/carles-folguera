@@ -1,6 +1,6 @@
 import React from "react"
 import MediaQuery from "react-responsive"
-import logo from "../../images/icons/logo.png"
+import logo from "../../images/icons/logo-light.png"
 import favicon from "../../images/icons/favicon.png"
 import darkFavi from "../../images/icons/favi-dark.png"
 import darkLogo from "../../images/icons/logo-dark.png"
