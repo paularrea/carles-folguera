@@ -8,8 +8,7 @@ import Logo from "../logo/Logo"
 import DarkModeToggle from "../darkMode/DarkModeToggle"
 import CloseButton from "../buttons/close"
 
-const Header = ({ pageWrapId, outerContainerId }) => {
-  const [changeMode, setChangeMode] = useState(false);
+const Header = ({ pageWrapId, outerContainerId, changeMode, setChangeMode }) => {
   const nav = (
     <nav>
       <Link

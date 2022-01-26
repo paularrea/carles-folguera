@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, {useState, useEffect} from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout/layout"
 import Intro from "../components/pages/intro"
@@ -7,13 +7,14 @@ import About from "../components/pages/about"
 import Contact from "../components/pages/contact"
 
 const Home = ({ data }) => {
+  const [changeMode, setChangeMode] = useState(false);
   const projectsList = data.allMarkdownRemark.nodes
   return (
-    <Layout>
+    <Layout changeMode={changeMode} setChangeMode={setChangeMode}>
       <Intro />
       <Projects projectsList={projectsList} />
-      <About />
-      <Contact />
+      <About/>
+      <Contact changeMode={changeMode} />
     </Layout>
   )
 }

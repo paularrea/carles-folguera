@@ -21,6 +21,19 @@
         color: var(--secondaryColor);
       }
     }
+    .img{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      img{
+        width: 50px;
+      }
+      p{
+        margin: 0;
+        font-size: 20px;
+        line-height: 20px;
+      }
+    }
 }
 
 @media (min-width: 900px) {

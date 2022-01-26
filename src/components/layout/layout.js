@@ -8,7 +8,7 @@ import "../../styles/App.scss"
 import "../cursor/cursor.css"
 import "bootstrap/dist/css/bootstrap.min.css"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, setChangeMode, changeMode }) => {
   const [show, setShow] = useState(false)
 
   if (typeof window !== "undefined") {
@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
         <AnimatedCursor />
       </MediaQuery>
       <div id="App">
-        <Header pageWrapId={"page-wrap"} outerContainerId={"App"}/>
+        <Header setChangeMode={setChangeMode} changeMode={changeMode} pageWrapId={"page-wrap"} outerContainerId={"App"}/>
         <div id="page-wrap">
           <main className={page}>{children}</main>
         </div>
