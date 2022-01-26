@@ -11,7 +11,7 @@ import {
 const Intro = () => {
   return (
     <div id="intro">
-      <Seo title="Pau Larrea" />
+      <Seo title="Frontend" />
       <div className={container}>
         <section className={container_separator}></section>
         <Fade>

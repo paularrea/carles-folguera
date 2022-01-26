@@ -1,9 +1,9 @@
 import React from "react"
 import { ThemeToggler } from "gatsby-plugin-dark-mode"
 import { Switch } from "./Switch"
-import {container} from "./switcher.module.scss"
+import { container } from "./switcher.module.scss"
 
-const DarkModeToggle = ({setChangeMode}) => {
+const DarkModeToggle = ({ setChangeMode }) => {
   return (
     <div className={container}>
       <p>Dark mode</p>
@@ -12,8 +12,10 @@ const DarkModeToggle = ({setChangeMode}) => {
           return (
             <Switch
               type="checkbox"
-              onClick={setChangeMode(theme)}
-              onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
+              onClick={setChangeMode && setChangeMode(theme)}
+              onChange={e => {
+                toggleTheme(e.target.checked ? "dark" : "light")
+              }}
               checked={theme === "dark"}
             />
           )

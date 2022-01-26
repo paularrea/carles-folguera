@@ -3,11 +3,10 @@
 }
 .navbar, .navbar_template{
     z-index: 9999;
-    padding: 0 5vw;
+    padding: 1rem 5vw;
     width: 100%;
     position: fixed;
     display: flex;
-    padding-top: 1rem;
     justify-content: space-between;
     align-items: flex-start;
     height: 10vh;

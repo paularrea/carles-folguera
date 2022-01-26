@@ -17,7 +17,6 @@ import Button from "../buttons/button"
 const Projects = ({ projectsList }) => {
   return (
     <div className={container} id="projects">
-      <Seo title="Projects" />
       {projectsList.map((project, key) => {
         return (
           <Fade bottom>

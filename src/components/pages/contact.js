@@ -43,7 +43,6 @@ const Contact = ({ changeMode }) => {
   ]
   return (
     <>
-      <Seo title="Contact" />
       <div id="contact" className={container}>
         <section>
           <h1>I'd love to hear from you.</h1>

@@ -7,7 +7,12 @@ import About from "../components/pages/about"
 import Contact from "../components/pages/contact"
 
 const Home = ({ data }) => {
-  const [changeMode, setChangeMode] = useState(false);
+  const [changeMode, setChangeMode] = useState('');
+  
+  useEffect(() => {
+    setChangeMode(changeMode)
+  }, [changeMode]);
+  
   const projectsList = data.allMarkdownRemark.nodes
   return (
     <Layout changeMode={changeMode} setChangeMode={setChangeMode}>
