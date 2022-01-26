@@ -16,10 +16,13 @@ export default function ProjectDetails({ data, pageContext }) {
       <div className={container}>
         <div className={flex}>
           {previous && <a href={previous.slug}>{"<"} Previous</a>}
-          <h3>{title}</h3>
+          <div>
+            <h3>{title}</h3>
+            <h6>{stack}</h6>
+          </div>
           {next && <a href={next.slug}>Next {">"}</a>}
         </div>
-        <h6>{stack}</h6>
+
         <div className={md} dangerouslySetInnerHTML={{ __html: html }} />
       </div>
     </Layout>

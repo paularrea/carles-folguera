@@ -7,7 +7,8 @@
 }
 
 .bm-burger-bars {
-  background: var(--aColor)
+  background: var(--aColor);
+  height: 3px !important;
 }
 
 .bm-burger-bars-hover {
@@ -17,12 +18,12 @@
 .bm-cross-button {
   width: 30px !important;
   height: 30px !important;
-  right: 6.3vw !important;
-  top: 1.2rem !important;
+  right: 6.7vw !important;
+  top: .7rem !important;
 }
 .bm-cross {
   background: var(--aColor);
-  height: 30px !important;
+  height: 40px !important;
 }
 .bm-menu-wrap {
   position: fixed;

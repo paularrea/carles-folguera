@@ -8,7 +8,12 @@ import Logo from "../logo/Logo"
 import DarkModeToggle from "../darkMode/DarkModeToggle"
 import CloseButton from "../buttons/close"
 
-const Header = ({ pageWrapId, outerContainerId, changeMode, setChangeMode }) => {
+const Header = ({
+  pageWrapId,
+  outerContainerId,
+  changeMode,
+  setChangeMode,
+}) => {
   const nav = (
     <nav>
       <Link
@@ -67,10 +72,12 @@ const Header = ({ pageWrapId, outerContainerId, changeMode, setChangeMode }) => 
         <DarkModeToggle setChangeMode={setChangeMode} />
       </MediaQuery>
       <MediaQuery maxWidth={870}>
-        <Link to="/">
-        <Logo changeMode={changeMode} />
-        </Link>
-        <Burger setChangeMode={setChangeMode} pageWrapId={pageWrapId} outerContainerId={outerContainerId} />
+        {scrollToTop}
+        <Burger
+          setChangeMode={setChangeMode}
+          pageWrapId={pageWrapId}
+          outerContainerId={outerContainerId}
+        />
       </MediaQuery>
     </div>
   )
