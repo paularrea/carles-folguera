@@ -10,9 +10,13 @@ resume: 'An intelligent dog collar designed to satisfy those dog lovers who know
 ---
 <article>
 <p>
-
-Implementation of the page layouts of a static site using GatsbyJS and styled with SASS. Working closely with the IT team and the UX/UI designer we worked with Adobe XD for the design and creation of a prototype of the user experience for the site which has helped me to develop the project in a much faster, more comfortable and structured way.</p>
-      <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/kolyy%2Fmockup-kolyy.png?alt=media&token=b6a0bdda-48fe-447a-92dc-79a03473806f" alt="mockup kolyy" />
+This is a fully responsive site for the startup Kolyy. Developed using Gatsby and styled with Sass. It contain a large scrollable landing page with scrolling features, a blog page and a breed finder. Working confortably with the UX/UI team we have made the prototype with Figma. Using AWS storage services for the management of large media.
+<br/>
+<a rel="noreferrer" target="_blank" href='https://kolyy.com/'>
+  See site
+</a>
+</p>
+<img src="https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/kolyy%2Fmockup-kolyy.png?alt=media&token=b6a0bdda-48fe-447a-92dc-79a03473806f" alt="mockup kolyy" />
 </article>
 <br/>
 <section>
