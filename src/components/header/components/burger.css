@@ -7,12 +7,12 @@
 }
 
 .bm-burger-bars {
-  background: var(--aColor);
+  background: black;
   height: 3px !important;
 }
 
 .bm-burger-bars-hover {
-  background: var(--aColor)
+  background: black;
 }
 
 .bm-cross-button {
@@ -22,7 +22,7 @@
   top: .7rem !important;
 }
 .bm-cross {
-  background: var(--aColor);
+  background: white;
   height: 40px !important;
 }
 .bm-menu-wrap {
@@ -31,7 +31,7 @@
   top: 0;
 }
 .bm-menu {
-  background: var(--bg);
+  background: black;
   opacity: 0.95;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
@@ -40,7 +40,6 @@
   margin-top: 4rem;
   height: fit-content !important;
   width: 100% !important;
-  color:  var(--aColor);
   height: auto;
   display: flex;
   flex-direction: column;
@@ -48,8 +47,9 @@
   justify-content: flex-start !important;
 }
 .bm-item{
-  font-size: 45px !important;
+  font-size: 20px !important;
+  color: white !important;
 }
 .bm-overlay {
-  background: rgba(0, 0, 0, 0.787);
+  background: transparent !important;
 }

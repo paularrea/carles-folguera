@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { Link } from "react-scroll"
 import { active } from "../header.module.scss"
 import { slide as Menu } from "react-burger-menu"
-import DarkModeToggle from "../../darkMode/DarkModeToggle"
+import { tabs } from "./nav/tabs"
 
 const Burger = props => {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -10,7 +10,6 @@ const Burger = props => {
   const handleStateChange = state => {
     setMenuOpen(state.isOpen)
   }
-
   const closeMenu = () => {
     setMenuOpen(false)
   }
@@ -21,43 +20,21 @@ const Burger = props => {
       onStateChange={state => handleStateChange(state)}
       {...props}
     >
-      <div>
-        <DarkModeToggle setChangeMode={props.setChangeMode} />
-      </div>
-      <br />
-      <Link
-        activeClass={active}
-        to="projects"
-        spy={true}
-        smooth={true}
-        offset={-40}
-        duration={1000}
-        onClick={closeMenu}
-      >
-        Projects
-      </Link>
-      <Link
-        activeClass={active}
-        to="about"
-        spy={true}
-        smooth={true}
-        offset={-40}
-        duration={1000}
-        onClick={closeMenu}
-      >
-        About
-      </Link>
-      <Link
-        activeClass={active}
-        to="contact"
-        spy={true}
-        smooth={true}
-        offset={-40}
-        duration={1000}
-        onClick={closeMenu}
-      >
-        Contact
-      </Link>
+      {tabs.map(tab => {
+        return (
+          <Link
+            activeClass={active}
+            to={tab.page}
+            spy={true}
+            smooth={true}
+            offset={-40}
+            duration={1000}
+            onClick={closeMenu}
+          >
+            {tab.text}
+          </Link>
+        )
+      })}
     </Menu>
   )
 }

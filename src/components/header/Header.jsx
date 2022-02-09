@@ -1,57 +1,20 @@
+import React from "react"
 import { Link } from "react-scroll"
-import React, { useEffect, useState } from "react"
 import Burger from "./components/burger"
 import MediaQuery from "react-responsive"
-import { logo, navbar, active, logo_container } from "./header.module.scss"
+import { navbar, logo_container } from "./header.module.scss"
 import "./components/burger.css"
-import Logo from "../logo/Logo"
-import DarkModeToggle from "../darkMode/DarkModeToggle"
-import CloseButton from "../buttons/close"
+// import Logo from "../logo/Logo"
+import Navigation from "./components/nav/navigation"
 
 const Header = ({
   pageWrapId,
   outerContainerId,
-  changeMode,
   setChangeMode,
 }) => {
-  const nav = (
-    <nav>
-      <Link
-        activeClass={active}
-        to="projects"
-        spy={true}
-        smooth={true}
-        offset={-40}
-        duration={1000}
-      >
-        Projects
-      </Link>
-      <Link
-        activeClass={active}
-        to="about"
-        spy={true}
-        smooth={true}
-        offset={-40}
-        duration={1000}
-      >
-        About
-      </Link>
-      <Link
-        activeClass={active}
-        to="contact"
-        spy={true}
-        smooth={true}
-        offset={-40}
-        duration={1000}
-      >
-        Contact
-      </Link>
-    </nav>
-  )
 
   const scrollToTop = (
     <Link
-      activeClass={active}
       to="intro"
       spy={true}
       smooth={true}
@@ -59,17 +22,17 @@ const Header = ({
       duration={1000}
     >
       <div className={logo_container}>
-        <Logo changeMode={changeMode} />
+        {/* <Logo /> */}
+        Logo
       </div>
     </Link>
   )
 
   return (
-    <div className={navbar}>
+    <header className={navbar}>
       <MediaQuery minWidth={870}>
         {scrollToTop}
-        {nav}
-        <DarkModeToggle setChangeMode={setChangeMode} />
+        <Navigation/>
       </MediaQuery>
       <MediaQuery maxWidth={870}>
         {scrollToTop}
@@ -79,7 +42,7 @@ const Header = ({
           outerContainerId={outerContainerId}
         />
       </MediaQuery>
-    </div>
+    </header>
   )
 }
 

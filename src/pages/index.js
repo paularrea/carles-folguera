@@ -1,25 +1,21 @@
-import React, {useState, useEffect} from "react"
+import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout/layout"
 import Intro from "../components/pages/intro"
 import Projects from "../components/pages/projects"
 import About from "../components/pages/about"
 import Contact from "../components/pages/contact"
+import Services from "../components/pages/services"
 
 const Home = ({ data }) => {
-  const [changeMode, setChangeMode] = useState('');
-  
-  useEffect(() => {
-    setChangeMode(changeMode)
-  }, [changeMode]);
-  
   const projectsList = data.allMarkdownRemark.nodes
   return (
-    <Layout changeMode={changeMode} setChangeMode={setChangeMode}>
+    <Layout>
       <Intro />
       <Projects projectsList={projectsList} />
-      <About/>
-      <Contact changeMode={changeMode} />
+      <Services />
+      <About />
+      <Contact />
     </Layout>
   )
 }

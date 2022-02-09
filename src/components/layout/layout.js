@@ -7,6 +7,7 @@ import MediaQuery from "react-responsive"
 import "../../styles/App.scss"
 import "../cursor/cursor.css"
 import "bootstrap/dist/css/bootstrap.min.css"
+import Footer from "../footer/Footer"
 
 const Layout = ({ children, setChangeMode, changeMode }) => {
   const [show, setShow] = useState(false)
@@ -30,10 +31,11 @@ const Layout = ({ children, setChangeMode, changeMode }) => {
         <AnimatedCursor />
       </MediaQuery>
       <div id="App">
-        <Header setChangeMode={setChangeMode} changeMode={changeMode} pageWrapId={"page-wrap"} outerContainerId={"App"}/>
+        <Header pageWrapId={"page-wrap"} outerContainerId={"App"}/>
         <div id="page-wrap">
           <main className={page}>{children}</main>
         </div>
+        <Footer/>
       </div>
     </>
   )
