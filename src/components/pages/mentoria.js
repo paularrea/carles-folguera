@@ -1,6 +1,6 @@
 import * as React from "react"
 import { container } from "../../styles/pages.module.scss"
-import DownloadPdf from "../utils/links/downloadPdf"
+// import DownloadPdf from "../utils/links/downloadPdf"
 import TextComponent from "../utils/text/TextComponent"
 
 const Mentoria = () => {
@@ -32,10 +32,10 @@ const Mentoria = () => {
         list={list}
         text={text}
       />
-      <DownloadPdf
+      {/* <DownloadPdf
         title="Entrenamiento Invisible"
         link="https://www.google.com/"
-      />
+      /> */}
     </div>
   )
 }

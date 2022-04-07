@@ -5,7 +5,7 @@ import OrangeShadow from "../utils/orangeShadow/OrangeShadow"
 import fcbIcon from "../../images/icons/fcb.png"
 import FlexGrid from "../utils/flexGrid/FlexGrid"
 import TextBookCall from "../utils/text/TextBookCall"
-import DownloadPdf from "../utils/links/downloadPdf"
+// import DownloadPdf from "../utils/links/downloadPdf"
 
 const Consultoria = () => {
   const textColor = "white"
@@ -59,7 +59,7 @@ const Consultoria = () => {
         textColor="white"
       />
       <FlexGrid list={flex} />
-      <DownloadPdf textColor={textColor} link="" title="Consultoría" />
+      {/* <DownloadPdf textColor={textColor} link="" title="Consultoría" /> */}
       <TextBookCall
         textColor={textColor}
         buttonTo="contacto"
