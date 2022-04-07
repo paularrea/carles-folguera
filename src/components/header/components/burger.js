@@ -13,6 +13,7 @@ const Burger = props => {
   const closeMenu = () => {
     setMenuOpen(false)
   }
+  
   return (
     <Menu
       right
