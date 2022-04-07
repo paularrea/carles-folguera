@@ -1,0 +1,46 @@
+@import "../../../styles/variables.scss";
+
+.container{
+    padding: 5vw 0;
+    padding-bottom: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    .item_flex{
+        margin: 0 auto;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+        p,h5{
+            color: $white;
+        }
+        h5{
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        p{
+            font-weight: 200 !important;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        img{
+            height: 50px;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    .container{
+        flex-direction: row;
+        .item_flex{
+            margin-bottom: 0;
+            max-width: 40%;
+        }
+    }
+  }

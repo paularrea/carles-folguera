@@ -1,8 +1,19 @@
+@import "../../styles/variables.scss";
+
 button{
     background-color: transparent;
     border: none;
 }
 .button{
+    background-color: $orange;
+    color:$dark_blue;
+    padding: .6rem 2rem;
+    border-radius: 100px;
+    position: relative;
+    z-index: 99;
+    &:hover{
+        background-color: $orange_hover;
+    }
 }
 .close_button{
     width: 40px;

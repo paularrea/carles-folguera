@@ -1,0 +1,42 @@
+@import "../../../styles/variables.scss";
+
+.container{
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 3rem 5vw;
+    max-width: 1200px;
+    width: 100%;
+    section{
+        margin: 0 auto;
+        position: relative;
+        .abs_quotes{
+            position: absolute;
+            top: -2.2rem;
+            left: -.5rem;
+            img{
+                width: 50px;
+            }
+        }
+        h4{
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    .container{
+        section{
+            h4{
+                font-weight: 300;
+                font-size: 28px;
+                line-height: 40px;
+            }
+        }
+    }
+}

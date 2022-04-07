@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "react-scroll"
-import { active } from "../../header.module.scss"
+import { active, nav_a } from "../../header.module.scss"
 import { tabs } from "./tabs"
 
 const Navigation = () => {
@@ -9,6 +9,7 @@ const Navigation = () => {
       {tabs.map(tab => {
         return (
           <Link
+          className={nav_a}
             activeClass={active}
             to={tab.page}
             spy={true}

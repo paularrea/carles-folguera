@@ -2,39 +2,25 @@ import React from "react"
 import { Link } from "react-scroll"
 import Burger from "./components/burger"
 import MediaQuery from "react-responsive"
-import { navbar, logo_container } from "./header.module.scss"
+import { navbar } from "./header.module.scss"
 import "./components/burger.css"
-// import Logo from "../logo/Logo"
 import Navigation from "./components/nav/navigation"
+import Logo from "../utils/logo/Logo"
 
-const Header = ({
-  pageWrapId,
-  outerContainerId,
-  setChangeMode,
-}) => {
-
+const Header = ({ pageWrapId, outerContainerId, setChangeMode }) => {
   const scrollToTop = (
-    <Link
-      to="intro"
-      spy={true}
-      smooth={true}
-      offset={-40}
-      duration={1000}
-    >
-      <div className={logo_container}>
-        {/* <Logo /> */}
-        Logo
-      </div>
+    <Link to="intro" spy={true} smooth={true} offset={-40} duration={1000}>
+      <Logo />
     </Link>
   )
 
   return (
     <header className={navbar}>
-      <MediaQuery minWidth={870}>
+      <MediaQuery minWidth={900}>
         {scrollToTop}
-        <Navigation/>
+        <Navigation />
       </MediaQuery>
-      <MediaQuery maxWidth={870}>
+      <MediaQuery maxWidth={900}>
         {scrollToTop}
         <Burger
           setChangeMode={setChangeMode}

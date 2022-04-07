@@ -1,0 +1,32 @@
+@import "../../../styles/variables.scss";
+
+.container{
+    padding: 5vw 0;
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    h4,a{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    a{
+        color: $orange !important;
+        position: relative;
+        z-index: 9999;
+        cursor: pointer;
+        &:hover{
+            color: $orange_active !important
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    .container{
+        h4,a{
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+}

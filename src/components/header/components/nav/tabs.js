@@ -1,18 +1,18 @@
 export const tabs = [
     {
-        page: "projects",
-        text: "Proyectos"
+        page: "mentoria",
+        text: "Mentorías"
     },
     {
-        page: "services",
-        text: "Servicios"
+        page: "consultoria",
+        text: "Consultoría"
     },
     {
-        page: "about",
-        text: "Quién somos"
+        page: "conferencias",
+        text: "Conferencias"
     },
     {
-        page: "contact",
+        page: "contacto",
         text: "Contacto"
     },
 ]

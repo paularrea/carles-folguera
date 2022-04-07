@@ -40,13 +40,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `projects`,
-        path: `${__dirname}/src/projects`,
-      },
-    },
-    {
       resolve: "gatsby-plugin-anchor-links",
       options: {
         offset: -100,
