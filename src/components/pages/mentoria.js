@@ -1,5 +1,6 @@
 import * as React from "react"
 import { container } from "../../styles/pages.module.scss"
+import DownloadFile from "../utils/links/DownloadFile"
 // import DownloadPdf from "../utils/links/downloadPdf"
 import TextComponent from "../utils/text/TextComponent"
 
@@ -36,6 +37,10 @@ const Mentoria = () => {
         title="Entrenamiento Invisible"
         link="https://www.google.com/"
       /> */}
+      <DownloadFile
+           title="Entrenamiento Invisible"
+           link="https://www.google.com/"
+      />
     </div>
   )
 }

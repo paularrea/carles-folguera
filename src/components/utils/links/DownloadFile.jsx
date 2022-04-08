@@ -1,10 +1,10 @@
 import React from "react"
 import { container } from "./link.module.scss"
 
-const DownloadPdf = ({ link, title, textColor }) => {
+const DownloadFile = ({ link, title, textColor }) => {
   return (
     <div className={container}>
-      <h4 style={{ color: textColor}}>
+      <h4 style={{ color: textColor && textColor}}>
         Descarga{" "}
         <a target="_blank" rel="noopener noreferrer" href={link}>
           AQUÍ
@@ -15,4 +15,4 @@ const DownloadPdf = ({ link, title, textColor }) => {
   )
 }
 
-export default DownloadPdf
+export default DownloadFile
