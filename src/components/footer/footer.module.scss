@@ -1,11 +1,24 @@
 .container{
     background-color: whitesmoke;
-    padding: 0 5vw;
-    height: 60px;
+    padding: 1rem 5vw;
+    height: auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     p{
+        font-weight: 200;
+        font-size: 14px;
+        line-height: 20px;
         margin: 0;
     }
 }
+
+
+@media (min-width: 900px) {
+    .container{
+        p{
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+    }

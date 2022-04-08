@@ -24,7 +24,7 @@ const Navigation = ({ currentLocale, handleChange }) => {
           </Link>
         )
       })}
-      <Languages currentLocale={currentLocale} handleChange={handleChange} />
+      <Languages color='white' currentLocale={currentLocale} handleChange={handleChange} />
     </nav>
   )
 }

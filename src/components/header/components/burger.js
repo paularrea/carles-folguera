@@ -4,6 +4,7 @@ import { active } from "../header.module.scss"
 import { slide as Menu } from "react-burger-menu"
 import { menuList } from "../../utils/data/lists"
 import { useIntl } from "react-intl"
+import Languages from "../../../translations/languages"
 
 const Burger = props => {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -34,10 +35,11 @@ const Burger = props => {
             duration={1000}
             onClick={closeMenu}
           >
-            {tab.text[locale]}
+            {tab.title[locale]}
           </Link>
         )
       })}
+      <Languages color='#060823' currentLocale={props.currentLocale} handleChange={props.handleChange} />
     </Menu>
   )
 }

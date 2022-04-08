@@ -29,9 +29,9 @@ const Header = ({
       <MediaQuery maxWidth={900}>
         {scrollToTop}
         <Burger
-          setChangeMode={setChangeMode}
           pageWrapId={pageWrapId}
           outerContainerId={outerContainerId}
+          currentLocale={currentLocale} handleChange={handleChange}
         />
       </MediaQuery>
     </header>
