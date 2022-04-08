@@ -7,7 +7,13 @@ import "./components/burger.css"
 import Navigation from "./components/nav/navigation"
 import Logo from "../utils/logo/Logo"
 
-const Header = ({ pageWrapId, outerContainerId, setChangeMode }) => {
+const Header = ({
+  pageWrapId,
+  outerContainerId,
+  setChangeMode,
+  currentLocale,
+  handleChange,
+}) => {
   const scrollToTop = (
     <Link to="intro" spy={true} smooth={true} offset={-40} duration={1000}>
       <Logo />
@@ -18,7 +24,7 @@ const Header = ({ pageWrapId, outerContainerId, setChangeMode }) => {
     <header className={navbar}>
       <MediaQuery minWidth={900}>
         {scrollToTop}
-        <Navigation />
+        <Navigation currentLocale={currentLocale} handleChange={handleChange} />
       </MediaQuery>
       <MediaQuery maxWidth={900}>
         {scrollToTop}

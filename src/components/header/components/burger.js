@@ -2,10 +2,12 @@ import React, { useState } from "react"
 import { Link } from "react-scroll"
 import { active } from "../header.module.scss"
 import { slide as Menu } from "react-burger-menu"
-import { tabs } from "./nav/tabs"
+import { menuList } from "../../utils/data/lists"
+import { useIntl } from "react-intl"
 
 const Burger = props => {
   const [menuOpen, setMenuOpen] = useState(false)
+  const { locale } = useIntl()
 
   const handleStateChange = state => {
     setMenuOpen(state.isOpen)
@@ -13,7 +15,7 @@ const Burger = props => {
   const closeMenu = () => {
     setMenuOpen(false)
   }
-  
+
   return (
     <Menu
       right
@@ -21,7 +23,7 @@ const Burger = props => {
       onStateChange={state => handleStateChange(state)}
       {...props}
     >
-      {tabs.map(tab => {
+      {menuList.map(tab => {
         return (
           <Link
             activeClass={active}
@@ -32,7 +34,7 @@ const Burger = props => {
             duration={1000}
             onClick={closeMenu}
           >
-            {tab.text}
+            {tab.text[locale]}
           </Link>
         )
       })}

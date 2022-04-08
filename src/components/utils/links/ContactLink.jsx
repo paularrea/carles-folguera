@@ -1,12 +1,13 @@
 import React from "react"
+import { contactoText } from "../data/texts"
 import { container } from "./link.module.scss"
 
-const ContactLink = ({ link }) => {
+const ContactLink = ({ link, locale }) => {
   return (
     <div className={container}>
-      <h4 style={{ color: 'white' }}>
-        Envíame un correo a <a href={`mailto:${link}`}>{link}</a> y te atenderé
-        lo antes posible.
+      <h4 style={{ color: "white" }}>
+        {contactoText.link.send[locale]} <a href={`mailto:${link}`}>{link}</a>{" "}
+        {contactoText.link.response[locale]}
       </h4>
     </div>
   )

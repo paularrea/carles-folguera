@@ -1,15 +1,17 @@
 import React from "react"
+import { downloadFileText } from "../data/texts"
 import { container } from "./link.module.scss"
 
-const DownloadFile = ({ link, title, textColor }) => {
+const DownloadFile = ({ link, title, textColor, locale }) => {
   return (
     <div className={container}>
-      <h4 style={{ color: textColor && textColor}}>
-        Descarga{" "}
+      <h4 style={{ color: textColor && textColor }}>
+        {downloadFileText.download[locale]}{" "}
         <a target="_blank" rel="noopener noreferrer" href={link}>
-          AQUÍ
+          {downloadFileText.here[locale]}
         </a>{" "}
-        la presentación de {title} para más información.
+        {downloadFileText.presentation[locale]} {title[locale]}{" "}
+        {downloadFileText.information[locale]}
       </h4>
     </div>
   )

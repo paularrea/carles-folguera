@@ -1,15 +1,18 @@
 import React from "react"
 import { Link } from "react-scroll"
 import { active, nav_a } from "../../header.module.scss"
-import { tabs } from "./tabs"
+import Languages from "../../../../translations/languages"
+import { menuList } from "../../../utils/data/lists"
+import {useIntl} from 'react-intl'
 
-const Navigation = () => {
+const Navigation = ({ currentLocale, handleChange }) => {
+  const {locale} = useIntl();
   return (
     <nav>
-      {tabs.map(tab => {
+      {menuList.map(tab => {
         return (
           <Link
-          className={nav_a}
+            className={nav_a}
             activeClass={active}
             to={tab.page}
             spy={true}
@@ -17,10 +20,11 @@ const Navigation = () => {
             offset={-40}
             duration={1000}
           >
-            {tab.text}
+            {tab.title[locale]}
           </Link>
         )
       })}
+      <Languages currentLocale={currentLocale} handleChange={handleChange} />
     </nav>
   )
 }
