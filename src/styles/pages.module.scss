@@ -5,9 +5,51 @@
   position: relative;
   height: auto;
   padding: 3rem 5vw;
+  h6{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $light_blue;
+    letter-spacing: 0.2em;
+}
+ul{
+  list-style-type: none;
+  margin: 1rem 0;
+  padding: 0;
+}
+li{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+  li, p{
+    span{
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      margin-right: 1rem;
+    }
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 @media (min-width: 900px) {
   .container{
+    h6{
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+  }
+    p, li{
+      span{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+      }
+    font-size: 18px;
+    line-height: 24px;
+  }
   }
 }

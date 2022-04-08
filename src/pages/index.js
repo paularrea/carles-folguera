@@ -7,6 +7,7 @@ import Conferencias from "../components/pages/conferencias"
 import Contacto from "../components/pages/contacto"
 import Quote from "../components/utils/quote/Quote"
 import Bio from "../components/pages/bio"
+import Publicaciones from "../components/pages/publicaciones"
 
 const Home = () => {
   return (
@@ -36,6 +37,7 @@ const Home = () => {
         text="La excelencia como directivo deportivo de un club o una federación no está en una idea puntual, está en pensar y llevar a cabo acciones pensadas que permitan dejar un legado que vaya más allá del resultado deportivo. La responsabilidad última es hacia el propio deporte y sus valores, en la formación a los entrenadores y la esencia está en formar a los niños y niñas más allá de las 2 horas al día que están entrenando o compitiendo."
       />
       <Conferencias />
+      <Publicaciones/>
       <Contacto />
     </Layout>
   )

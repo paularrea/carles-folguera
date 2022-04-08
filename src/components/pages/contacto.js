@@ -28,7 +28,7 @@ const Contacto = () => {
     >
       <TextComponent
         title="Solicitud de Contacto"
-        subTitle="Contacto"
+        subTitle="CONTACTO"
         text={text}
         list={list}
         textColor="white"

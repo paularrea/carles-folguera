@@ -15,14 +15,15 @@
         position: relative;
         .abs_quotes{
             position: absolute;
-            top: -2.2rem;
-            left: -.5rem;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);          
             img{
-                width: 50px;
+                width: 70px;
             }
         }
         h4{
-            font-weight: 300;
+            font-weight: 500 !important;
             font-size: 18px;
             line-height: 28px;
         }
