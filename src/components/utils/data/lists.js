@@ -1,7 +1,9 @@
+import React from "react"
 import fcbIcon from "../../../images/icons/fcb.png"
 import trophyIcon from "../../../images/icons/trophy.png"
 import olympicsIcon from "../../../images/icons/olympics.png"
 import worldIcon from "../../../images/icons/world.png"
+
 //MENU
 export const menuList = [
   {
@@ -130,6 +132,88 @@ export const mentoriaList = {
   ],
 }
 
+export const mentoriaRecomendedList = [
+  {
+    superTitle: {
+      ESP: "PARA DEPORTISTAS",
+      CAT: "PARA DEPORTISTAS",
+    },
+    superText: {
+      ESP: "Mejorar los resultados, entrenarse en el alto rendimiento, optimizar la gestión emocional y mental, gestión positiva de las lesiones, transformar creencias limitantes, vivir la profesión con satisfacción y sin estrés.",
+      CAT: "Mejorar los resultados, entrenarse en el alto rendimiento, optimizar la gestión emocional y mental, gestión positiva de las lesiones, transformar creencias limitantes, vivir la profesión con satisfacción y sin estrés.",
+    },
+  },
+  {
+    superTitle: {
+      ESP: "PARA ENTRENADORES",
+      CAT: "PARA ENTRENADORES",
+    },
+    superText: {
+      ESP: "Potenciar y optimizar las capacidades y el liderazgo para conseguir el mayor rendimiento de los deportistas y del equipo. Fomentar la cohesión del equipo y comprometerse para convertirse en un auténtico líder inspiracional.",
+      CAT: "Potenciar y optimizar las capacidades y el liderazgo para conseguir el mayor rendimiento de los deportistas y del equipo. Fomentar la cohesión del equipo y comprometerse para convertirse en un auténtico líder inspiracional.",
+    },
+  },
+]
+
+export const mentoriaFlexList = [
+  {
+    title: {
+      ESP: "1. SESIÓN INTRODUCTORIA",
+      CAT: "1. SESIÓN INTRODUCTORIA",
+    },
+    text: {
+      ESP: (
+        <>
+          Sesión online gratuita para realización de tu perfil.
+          <br />
+          Detección de necesidades y puntos a trabajar.
+          <br />
+          Creación de un plan de acción personalizado.
+        </>
+      ),
+      CAT: (
+        <>
+          Sesión online gratuita para realización de tu perfil.
+          <br />
+          Detección de necesidades y puntos a trabajar.
+          <br />
+          Creación de un plan de acción personalizado.
+        </>
+      ),
+    },
+  },
+  {
+    title: {
+      ESP: "2. PUESTA EN MARCHA",
+      CAT: "2. PUESTA EN MARCHA",
+    },
+    text: {
+      ESP: "Puesta en acción inmediata y acompañamiento one to one para la consecución de los objetivos acordados.",
+      CAT: "Puesta en acción inmediata y acompañamiento one to one para la consecución de los objetivos acordados.",
+    },
+  },
+  {
+    title: {
+      ESP: "3. MEJORA CONTÍNUA",
+      CAT: "3. MEJORA CONTÍNUA",
+    },
+    text: {
+      ESP: "Trabajo guiado a través de mentorías, herramientas y ejercicios en los planos físico, mental, personal y profesional.",
+      CAT: "Trabajo guiado a través de mentorías, herramientas y ejercicios en los planos físico, mental, personal y profesional.",
+    },
+  },
+  {
+    title: {
+      ESP: "4. RESULTADOS",
+      CAT: "4. RESULTADOS",
+    },
+    text: {
+      ESP: "Consecución de los objetivos iniciales planteados y análisis del impacto positivo de estos en las otras áreas vitales.",
+      CAT: "Consecución de los objetivos iniciales planteados y análisis del impacto positivo de estos en las otras áreas vitales.",
+    },
+  },
+]
+
 // CONSULTORIA
 export const consultoriaList = {
   title: {
@@ -213,8 +297,8 @@ export const conferenciasList = {
     CAT: "Per a Clubs, Directors y Federacions",
   },
   subTitle: {
-    ESP: "CONSULTORÍA",
-    CAT: "CONSULTORIA",
+    ESP: "CONFERENCIAS",
+    CAT: "CONFERENCIAS",
   },
 }
 

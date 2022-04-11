@@ -11,6 +11,7 @@ import Bio from "../components/pages/bio"
 import Publicaciones from "../components/pages/publicaciones"
 import { buttonsText, quotesText } from "../components/utils/data/texts"
 import { LOCALES } from "../translations/locales"
+import FadeIn from "../components/utils/animation/SlideIn"
 
 const Home = () => {
   const [currentLocale, setCurrentLocale] = useState(LOCALES.SPANISH)
@@ -20,33 +21,33 @@ const Home = () => {
   return (
     <IntlProvider locale={currentLocale}>
       <Layout currentLocale={currentLocale} handleChange={handleChange}>
-        <Intro />
-        <Quote
-          buttonTo="bio"
-          buttonText={buttonsText.know[currentLocale]}
-          text={quotesText.quoteOne[currentLocale]}
-        />
-        <Bio />
-        <Quote
-          buttonTo="mentoria"
-          buttonText={buttonsText.know[currentLocale]}
-          text={quotesText.quoteTwo[currentLocale]}
-        />
-        <Mentoria />
-        <Quote
-          buttonTo="contacto"
-          buttonText={buttonsText.contact[currentLocale]}
-          text={quotesText.quoteThree[currentLocale]}
-        />
-        <Consultoria />
-        <Quote
-          buttonTo="contacto"
-          buttonText={buttonsText.contact[currentLocale]}
-          text={quotesText.quoteFour[currentLocale]}
-        />
-        <Conferencias />
-        <Publicaciones />
-        <Contacto />
+          <Intro />
+          <Quote
+            buttonTo="bio"
+            buttonText={buttonsText.know[currentLocale]}
+            text={quotesText.quoteOne[currentLocale]}
+          />
+          <Bio />
+          <Quote
+            buttonTo="mentoria"
+            buttonText={buttonsText.know[currentLocale]}
+            text={quotesText.quoteTwo[currentLocale]}
+          />
+          <Mentoria />
+          <Quote
+            buttonTo="contacto"
+            buttonText={buttonsText.contact[currentLocale]}
+            text={quotesText.quoteThree[currentLocale]}
+          />
+          <Consultoria />
+          <Quote
+            buttonTo="contacto"
+            buttonText={buttonsText.contact[currentLocale]}
+            text={quotesText.quoteFour[currentLocale]}
+          />
+          <Conferencias />
+          <Publicaciones />
+          <Contacto />
       </Layout>
     </IntlProvider>
   )

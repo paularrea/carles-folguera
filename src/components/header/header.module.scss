@@ -1,6 +1,6 @@
 @import "../../styles/variables.scss";
 
-.navbar{
+.navbar, .transparent_navbar{
     z-index: 9999;
     width: 100%;
     padding: 0 5vw;
@@ -39,9 +39,12 @@
         }
     }
 }
+.transparent_navbar{
+    background-color: transparent;
+}
 
 @media (min-width: 900px) {
-.navbar{
+.navbar, .transparent_navbar{
     width: 100%;
     align-items: center;
     height: 80px;

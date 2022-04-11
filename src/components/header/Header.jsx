@@ -1,27 +1,40 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "react-scroll"
 import Burger from "./components/burger"
 import MediaQuery from "react-responsive"
-import { navbar } from "./header.module.scss"
+import { navbar, transparent_navbar } from "./header.module.scss"
 import "./components/burger.css"
 import Navigation from "./components/nav/navigation"
 import Logo from "../utils/logo/Logo"
+import FadeIn from "../utils/animation/FadeIn"
 
 const Header = ({
   pageWrapId,
   outerContainerId,
-  setChangeMode,
   currentLocale,
   handleChange,
 }) => {
+  const [colorChange, setColorchange] = useState(false)
+
+  const changeNavbarColor = () => {
+    if (window.scrollY >= window.innerHeight - 80) {
+      setColorchange(true)
+    } else {
+      setColorchange(false)
+    }
+  }
+  window.addEventListener("scroll", changeNavbarColor)
+
   const scrollToTop = (
     <Link to="intro" spy={true} smooth={true} offset={-40} duration={1000}>
-      <Logo />
+      <FadeIn>
+        <Logo />
+      </FadeIn>
     </Link>
   )
 
   return (
-    <header className={navbar}>
+    <header className={colorChange ? navbar : transparent_navbar}>
       <MediaQuery minWidth={900}>
         {scrollToTop}
         <Navigation currentLocale={currentLocale} handleChange={handleChange} />
@@ -31,7 +44,8 @@ const Header = ({
         <Burger
           pageWrapId={pageWrapId}
           outerContainerId={outerContainerId}
-          currentLocale={currentLocale} handleChange={handleChange}
+          currentLocale={currentLocale}
+          handleChange={handleChange}
         />
       </MediaQuery>
     </header>
