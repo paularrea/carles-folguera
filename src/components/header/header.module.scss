@@ -1,7 +1,7 @@
 @import "../../styles/variables.scss";
 
 .navbar, .transparent_navbar{
-    z-index: 9999;
+    z-index: 999999;
     width: 100%;
     padding: 0 5vw;
     position: fixed;
@@ -25,18 +25,23 @@
         justify-content: space-between;
         .nav_a{
             color: white !important;
-            font-weight: 200;
-            font-size: 20px;
+            font-weight: 300;
+            font-size: 16px;
             line-height: 24px;
-            margin: 0 .5rem;
+            margin: 0 .7rem;
             -webkit-transition: font-weight .3s ease;
             -moz-transition: font-weight .3s ease;
             -o-transition: font-weight .3s ease;
             transition: font-weight .3s ease;
+            text-transform: uppercase;
+            &:hover, &:focus{
+                font-weight: 800;
+            }
         }
         .active{
-            font-weight: 600;
+            font-weight: 800;
         }
+  
     }
 }
 .transparent_navbar{

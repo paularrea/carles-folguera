@@ -7,7 +7,7 @@
 }
 
 .bm-burger-bars {
-  background: #FF914C;
+  background:  #FF914C;
   height: 3px !important;
 }
 
@@ -22,7 +22,7 @@
   top: .3rem !important;
 }
 .bm-cross {
-  background: #060823;
+  background: white;
   height: 40px !important;
 }
 .bm-menu-wrap {
@@ -31,8 +31,8 @@
   top: 0;
 }
 .bm-menu {
-  background: whitesmoke;
-  opacity: 0.9;
+  background: #060823;
+  opacity: 1;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
@@ -48,7 +48,10 @@
 }
 .bm-item{
   font-size: 20px !important;
-  color: #060823 !important;
+  color: white !important;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-weight: 300;
 }
 .bm-overlay {
   background: transparent !important;

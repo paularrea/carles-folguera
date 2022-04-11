@@ -4,7 +4,6 @@ import DownloadFile from "../utils/links/DownloadFile"
 import TextComponent from "../utils/text/TextComponent"
 import { useIntl } from "react-intl"
 import {
-  bioFlexList,
   mentoriaFlexList,
   mentoriaList,
   mentoriaRecomendedList,

@@ -39,7 +39,7 @@ const Burger = props => {
           </Link>
         )
       })}
-      <Languages color='#060823' currentLocale={props.currentLocale} handleChange={props.handleChange} />
+      <Languages color='white' currentLocale={props.currentLocale} handleChange={props.handleChange} />
     </Menu>
   )
 }

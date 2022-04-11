@@ -11,7 +11,7 @@ const Languages = ({ color, currentLocale, handleChange }) => {
         key={LOCALES.SPANISH}
         value={LOCALES.SPANISH}
       >
-        Esp
+        ESP
       </button>
       /
       <button
@@ -20,7 +20,7 @@ const Languages = ({ color, currentLocale, handleChange }) => {
         key={LOCALES.CATALAN}
         value={LOCALES.CATALAN}
       >
-        Cat
+        CAT
       </button>
     </div>
   )

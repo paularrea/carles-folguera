@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { Link } from "react-scroll"
 import Burger from "./components/burger"
 import MediaQuery from "react-responsive"
@@ -16,14 +16,16 @@ const Header = ({
 }) => {
   const [colorChange, setColorchange] = useState(false)
 
-  const changeNavbarColor = () => {
-    if (window.scrollY >= window.innerHeight - 80) {
-      setColorchange(true)
-    } else {
-      setColorchange(false)
+  useEffect(() => {
+    const changeNavbarColor = () => {
+      if (window.scrollY >= window.innerHeight - 80) {
+        setColorchange(true)
+      } else {
+        setColorchange(false)
+      }
     }
-  }
-  window.addEventListener("scroll", changeNavbarColor)
+    window.addEventListener("scroll", changeNavbarColor)
+  }, [colorChange])
 
   const scrollToTop = (
     <Link to="intro" spy={true} smooth={true} offset={-40} duration={1000}>
