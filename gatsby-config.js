@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Carles Folguera`,
     description: `Entrena lo invisible, para que lo visible sea insuperable`,
-    author: `www.paularrea.com`,
-    siteUrl: `www.carlesfolguera.com`,
+    author: `https://www.paularrea.com`,
+    siteUrl: `https://www.carlesfolguera.com/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
