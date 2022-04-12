@@ -11,7 +11,6 @@ import Bio from "../components/pages/bio"
 import Publicaciones from "../components/pages/publicaciones"
 import { buttonsText, quotesText } from "../components/utils/data/texts"
 import { LOCALES } from "../translations/locales"
-import FadeIn from "../components/utils/animation/SlideIn"
 
 const Home = () => {
   const [currentLocale, setCurrentLocale] = useState(LOCALES.SPANISH)

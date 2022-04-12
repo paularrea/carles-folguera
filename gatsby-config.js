@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Pau Larrea`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Carles Folguera`,
+    description: `Entrena lo invisible, para que lo visible sea insuperable`,
+    author: `www.paularrea.com`,
+    siteUrl: `www.carlesfolguera.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
