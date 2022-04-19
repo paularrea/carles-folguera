@@ -1,14 +1,15 @@
 @import "../../../styles/variables.scss";
 
 .container{
-    padding: 5vw 0;
     max-width: 850px;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
+    margin-top: 4rem;
     h4,a{
         font-weight: 500;
-        font-size: 18px;
-        line-height: 24px;
+        font-size: 20px;
+        line-height: 28px;
     }
     a{
         color: $orange !important;

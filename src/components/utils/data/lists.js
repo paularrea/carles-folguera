@@ -166,9 +166,10 @@ export const mentoriaRecomendedList = {
 
 export const mentoriaFlexList = [
   {
+    index: 1,
     title: {
-      ESP: "1. SESIÓN INTRODUCTORIA",
-      CAT: "1. SESSIÓ INTRODUCTÒRIA",
+      ESP: "SESIÓN INTRODUCTORIA",
+      CAT: "SESSIÓ INTRODUCTÒRIA",
     },
     text: {
       ESP: (
@@ -192,9 +193,10 @@ export const mentoriaFlexList = [
     },
   },
   {
+    index: 2,
     title: {
-      ESP: "2. PUESTA EN MARCHA",
-      CAT: "2. POSADA EN MARXA",
+      ESP: "PUESTA EN MARCHA",
+      CAT: "POSADA EN MARXA",
     },
     text: {
       ESP: "Puesta en acción inmediata y acompañamiento one to one para la consecución de los objetivos acordados.",
@@ -202,9 +204,10 @@ export const mentoriaFlexList = [
     },
   },
   {
+    index: 3,
     title: {
-      ESP: "3. MEJORA CONTÍNUA",
-      CAT: "3. MILLORA CONTÍNUA",
+      ESP: "MEJORA CONTÍNUA",
+      CAT: "MILLORA CONTÍNUA",
     },
     text: {
       ESP: "Trabajo guiado a través de mentorías, herramientas y ejercicios en los planos físico, mental, personal y profesional.",
@@ -212,9 +215,10 @@ export const mentoriaFlexList = [
     },
   },
   {
+    index: 4,
     title: {
-      ESP: "4. RESULTADOS",
-      CAT: "4. RESULTATS",
+      ESP: "RESULTADOS",
+      CAT: "RESULTATS",
     },
     text: {
       ESP: "Consecución de los objetivos iniciales planteados y análisis del impacto positivo de estos en las otras áreas vitales.",
@@ -307,8 +311,8 @@ export const conferenciasList = {
     CAT: "Per a clubs, directors i federacions",
   },
   subTitle: {
-    ESP: "CONSULTORÍA",
-    CAT: "CONSULTORIA",
+    ESP: "CONFERENCIAS",
+    CAT: "CONFERÈNCIES",
   },
 }
 

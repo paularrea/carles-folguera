@@ -24,6 +24,7 @@ const Contacto = () => {
         textColor="white"
       />
       <br />
+      <br />
       <ContactLink locale={locale} link="hola@carlesfolguera.com" />
       <OrangeShadow />
     </div>

@@ -225,7 +225,7 @@ export const contactoText = {
     ),
     CAT: (
       <p style={{ color: "white" }}>
-        CAT Reserva una trucada amb mi sense compromís per:
+        Reserva una trucada amb mi sense compromís per:
       </p>
     ),
   },

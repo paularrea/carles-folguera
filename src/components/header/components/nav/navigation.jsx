@@ -19,7 +19,7 @@ const Navigation = ({ currentLocale, handleChange }) => {
               to={tab.page}
               spy={true}
               smooth={true}
-              offset={-40}
+              offset={-10}
               duration={1000}
             >
               {tab.title[locale]}

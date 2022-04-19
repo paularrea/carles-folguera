@@ -10,7 +10,10 @@ const FlexGrid = ({ list, locale, textColor, align }) => {
           <div className={item_flex} key={i}>
             <SlideIn>
               {item.img && <img src={item.img} alt={item.title[locale]} />}
-              <p>{item.date}</p>
+              <p style={{marginBottom:'.5rem'}}>{item.date}</p>
+              {item.index && (
+                <h2 style={{ textAlign: align }}>{item.index}</h2>
+              )}
               {item.title && (
                 <h5 style={{ color: textColor, textAlign: align }}>
                   {item.title[locale]}

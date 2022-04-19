@@ -23,8 +23,6 @@ const Conferencias = () => {
           text={conferenciasText.text}
           textColor="white"
         />
-        <br />
-        <br />
         <TextBookCall
           textColor={textColor}
           buttonTo="contacto"

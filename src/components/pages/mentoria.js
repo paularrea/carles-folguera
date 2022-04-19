@@ -42,7 +42,7 @@ const Mentoria = () => {
               list={mentoriaRecomendedList.list}
               locale={locale}
               textColor="#060823"
-              align="left"
+              align="center"
             />
           </section>
         </div>
@@ -51,7 +51,7 @@ const Mentoria = () => {
         list={mentoriaFlexList}
         locale={locale}
         textColor="#060823"
-        align="left"
+        align="center"
       />
       <DownloadFile
         locale={locale}

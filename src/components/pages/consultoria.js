@@ -4,7 +4,6 @@ import TextComponent from "../utils/text/TextComponent"
 import OrangeShadow from "../utils/orangeShadow/OrangeShadow"
 import FlexGrid from "../utils/flexGrid/FlexGrid"
 import TextBookCall from "../utils/text/TextBookCall"
-import DownloadFile from "../utils/links/DownloadFile"
 import { consultoriaFlexList, consultoriaList } from "../utils/data/lists"
 import { useIntl } from "react-intl"
 import { bookCallText, consultoriaText } from "../utils/data/texts"
@@ -28,11 +27,6 @@ const Consultoria = () => {
         textColor="white"
       />
       <FlexGrid locale={locale} list={consultoriaFlexList} />
-      <DownloadFile
-        textColor={textColor}
-        link=""
-        title={consultoriaText.title}
-      />
       <TextBookCall
         textColor={textColor}
         buttonTo="contacto"
