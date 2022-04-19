@@ -32,7 +32,26 @@ li{
     font-size: 14px;
     line-height: 20px;
   }
+  .photo_container{
+    padding: 2rem 0 0 0;
+    >div{
+      width: 100%;
+      height: 300px;
+      opacity: 0.9;
+    }
+    .float_section{
+      >div{
+        max-width: 100%;
+        margin-top: 1rem;
+        >div{ 
+        margin: 0;
+        max-width: 100%;
+        }
+      }
+    }
+  }
 }
+
 
 @media (min-width: 900px) {
   .container{
@@ -50,6 +69,38 @@ li{
       }
     font-size: 18px;
     line-height: 24px;
+  }
+  .photo_container{
+    margin: 4rem 0 0 0;
+    position: relative;
+    >img{
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .float_section{
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+      background-color: $white;
+      padding: 3rem;
+      h2{
+        text-align: center;
+      }
+      >div{
+        width: 40vw;
+        max-width: 100%;
+        padding: 0;
+        flex-direction: column;
+        margin-top: 0;
+        >div{ 
+        margin: 0;
+        max-width: 100%;
+        }
+      }
+    }
   }
   }
 }

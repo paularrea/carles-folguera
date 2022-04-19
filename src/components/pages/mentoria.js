@@ -1,7 +1,12 @@
 import * as React from "react"
-import { container } from "../../styles/pages.module.scss"
+import {
+  container,
+  photo_container,
+  float_section,
+} from "../../styles/pages.module.scss"
 import DownloadFile from "../utils/links/DownloadFile"
 import TextComponent from "../utils/text/TextComponent"
+import MentoriaImg from "../GatsbyImages/MentoriaImg"
 import { useIntl } from "react-intl"
 import {
   mentoriaFlexList,
@@ -10,6 +15,7 @@ import {
 } from "../utils/data/lists"
 import { mentoriaText } from "../utils/data/texts"
 import FlexGrid from "../utils/flexGrid/FlexGrid"
+import FadeIn from "../utils/animation/FadeIn"
 
 const Mentoria = () => {
   const { locale } = useIntl()
@@ -27,12 +33,20 @@ const Mentoria = () => {
         locale={locale}
         text={mentoriaText.text}
       />
-      <FlexGrid
-        list={mentoriaRecomendedList}
-        locale={locale}
-        textColor="#060823"
-        align="left"
-      />
+      <FadeIn>
+        <div className={photo_container}>
+          <MentoriaImg />
+          <section className={float_section}>
+            <h2>{mentoriaRecomendedList.title[locale]}</h2>
+            <FlexGrid
+              list={mentoriaRecomendedList.list}
+              locale={locale}
+              textColor="#060823"
+              align="left"
+            />
+          </section>
+        </div>
+      </FadeIn>
       <FlexGrid
         list={mentoriaFlexList}
         locale={locale}

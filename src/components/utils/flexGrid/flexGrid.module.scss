@@ -14,7 +14,6 @@
         width: 100%;
         max-width: 100%;
         text-align: center;
-        margin-bottom: 2rem;
         p,h5{
             color: $white;
         }
@@ -52,7 +51,6 @@
     .container{
         flex-direction: row;
         .item_flex{
-            margin-bottom: 0;
             max-width: 40%;
             margin: 2rem;
         }

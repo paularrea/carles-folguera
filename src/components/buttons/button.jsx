@@ -17,9 +17,3 @@ const Button = ({ children, to }) => {
   )
 }
 export default Button
-
-{
-  /* <a href={to} target="_blank" rel="noopener noreferrer" className={button}>
-{children}
-</a> */
-}
