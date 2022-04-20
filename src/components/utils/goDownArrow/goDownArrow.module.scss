@@ -5,7 +5,7 @@
 
 .container{
     position: absolute;
-    left: 50%;
+    right: 47%;
     transform: translate(-50%, -50%);
     bottom: 2rem;
     -webkit-animation: downarrow 0.6s infinite alternate ease-in-out;
@@ -15,3 +15,8 @@
     }
 }
 
+@media (min-width: 900px) {
+    .container{
+        right: 49%;
+    }
+  }

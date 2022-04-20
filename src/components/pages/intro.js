@@ -11,16 +11,17 @@ const Intro = () => {
   const { locale } = useIntl()
   return (
     <IntroBg>
-      <div style={{position:'relative'}} id="intro">
+      <div style={{ position: "relative" }} id="intro">
         <div className={container}>
           <SlideIn>
             <h1>{introText.title[locale]}</h1>
             <h4>{introText.subTitle[locale]}</h4>
             <br />
+            <br />
             <Button to="bio">{buttonsText.discover[locale]}</Button>
           </SlideIn>
         </div>
-        <GoDownArrow section='bio'/>
+          <GoDownArrow section="bio" />
       </div>
     </IntroBg>
   )

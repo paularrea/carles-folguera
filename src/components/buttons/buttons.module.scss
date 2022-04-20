@@ -6,12 +6,16 @@ button{
 }
 .button{
     background-color: $orange;
-    color:$dark_blue;
-    padding: .6rem 2rem;
+    color:$white !important;
+    padding: .8rem 2rem;
     border-radius: 100px;
     position: relative;
     z-index: 99;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
     &:hover{
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
         background-color: $orange_hover;
     }
 }
@@ -23,3 +27,12 @@ button{
         width: 30px;
     }
 }
+
+@media (min-width: 900px) {
+    .button{
+        padding: 1rem 2.5rem;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 22px;
+    }
+  }
