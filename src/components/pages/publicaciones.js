@@ -1,8 +1,8 @@
 import React from "react"
 import { useIntl } from "react-intl"
 import { container } from "../../styles/pages.module.scss"
-import { publicationsList, testimonialsList } from "../utils/data/lists"
-import Testimonials from "../utils/testimonials/Testimonials"
+import { publicationsList } from "../utils/data/lists"
+// import Testimonials from "../utils/testimonials/Testimonials"
 import SlideIn from "../utils/animation/SlideIn"
 
 const Publicaciones = () => {
@@ -27,12 +27,12 @@ const Publicaciones = () => {
           )
         })}
       </ul>
-      <br />
+      {/* <br />
       <br />
       <SlideIn>
       <h6>{testimonialsList.title[locale]}</h6>
       <Testimonials locale={locale} />
-      </SlideIn>
+      </SlideIn> */}
     </div>
   )
 }
