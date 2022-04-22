@@ -8,7 +8,7 @@ const ContactLink = ({ link, locale }) => {
     <div className={container}>
       <SlideIn>
         <h4 style={{ color: "white" }}>
-          {contactoText.link.send[locale]} <a href={`mailto:${link}`}>{link}</a>{" "}
+          {contactoText.link.send[locale]} <a target="_blank" rel="noopener noreferrer" href={`mailto:${link}`}>AQUÍ</a>{" "}
           {contactoText.link.response[locale]}
         </h4>
       </SlideIn>

@@ -25,7 +25,7 @@ const Contacto = () => {
       />
       <br />
       <br />
-      <ContactLink locale={locale} link="hola@carlesfolguera.com" />
+      <ContactLink locale={locale} link="carlesfolguerafelip@gmail.com" />
       <OrangeShadow />
     </div>
   )

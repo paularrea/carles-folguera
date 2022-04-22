@@ -370,6 +370,66 @@ export const publicationsList = {
   ],
 }
 
+export const mediaList = {
+  title: {
+    ESP: "MEDIA",
+    CAT: "MEDIA",
+  },
+  catList : [
+    {
+      url: "https://www.alacarta.cat/lentrevista/capitol/carles-folguera",
+      text: {
+        ESP: "Notícies en xarxa - Entrevista a Carles Folguera",
+        CAT: "Notícies en xarxa - Entrevista a Carles Folguera",
+      }
+    },
+    {
+      url: "https://www.dailymotion.com/video/x50n071",
+      text: {
+        ESP: "La formació és la clau del projecte Masia 360",
+        CAT: "La formació és la clau del projecte Masia 360",
+      }
+    },
+    {
+      url: "https://www.youtube.com/watch?v=54UAX4-6ouM",
+      text: {
+        ESP: "Parlem d'humiltat amb Carles Folguera",
+        CAT: "Parlem d'humiltat amb Carles Folguera",
+      }
+    },
+    {
+      url: "https://www.rtve.es/play/videos/gent-de-paraula/gent-paraula-carles-folguera/1112925/",
+      text: {
+        ESP: "Gent de paraula - Entrevista a Carles Folguera",
+        CAT: "Gent de paraula - Entrevista a Carles Folguera",
+      }
+    }
+  ],
+  list : [
+    {
+      url: "https://www.youtube.com/watch?v=d4IByCTk4ng",
+      text: {
+        ESP: "En Perspectiva - La base del éxito del Barça",
+        CAT: "En Perspectiva - La clau del èxit del Barça",
+      }
+    },
+    {
+      url: "https://www.youtube.com/watch?v=RVRVmPJvlbE",
+      text: {
+        ESP: "Mundo Deportivo - Entrevista a Carles Folguera",
+        CAT: "Mundo Deportivo - Entrevista a Carles Folguera",
+      }
+    },
+    {
+      url: "https://www.youtube.com/watch?v=6E5d4Vg8x1I",
+      text: {
+        ESP: "El Universo - Carles Folguera",
+        CAT: "El Universo - Carles Folguera",
+      }
+    },
+  ]
+}
+
 export const testimonialsList = {
   title: {
     ESP: "TESTIMONIOS",

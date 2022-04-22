@@ -231,8 +231,8 @@ export const contactoText = {
   },
   link: {
     send: {
-      ESP: "Envíame un correo a",
-      CAT: "Envia’m un correu a",
+      ESP: "Envíame un correo ",
+      CAT: "Envia’m un correu ",
     },
     response: {
       ESP: "y te atenderé lo antes posible.",
@@ -250,5 +250,9 @@ export const footerText = {
   privacy: {
     ESP: "Política de privacidad",
     CAT: "Política de privacitat",
+  },
+  legal: {
+    ESP: "Aviso legal",
+    CAT: "Avís legal",
   },
  }
