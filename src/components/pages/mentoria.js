@@ -56,7 +56,7 @@ const Mentoria = () => {
       <DownloadFile
         locale={locale}
         title={mentoriaText.title}
-        link="../utils/pdf/entrenamiento_invisible.pdf"
+        link="https://drive.google.com/uc?export=download&id=1igH8aRdgHmmVNVYJpAeLOSDPWBAMybKh"
       />
     </div>
   )

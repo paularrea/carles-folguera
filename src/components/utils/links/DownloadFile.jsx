@@ -9,7 +9,7 @@ const DownloadFile = ({ link, title, textColor, locale }) => {
       <SlideIn>
         <h4 style={{ color: textColor && textColor }}>
           {downloadFileText.download[locale]}{" "}
-          <a target="_blank" rel="noopener noreferrer" href={link} download>
+          <a href={link} download>
             {downloadFileText.here[locale]}
           </a>{" "}
           {downloadFileText.presentation[locale]} {title[locale]}{" "}
